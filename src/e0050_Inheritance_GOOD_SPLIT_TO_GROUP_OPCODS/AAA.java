@@ -1,4 +1,4 @@
-package e0050_Inheritance;
+package e0050_Inheritance_GOOD_SPLIT_TO_GROUP_OPCODS;
 
 public class AAA {
     int i;
