@@ -1,12 +1,12 @@
-Classfile /E:/__PROJECT__/JAVA/BookShildt_002/out/production/BookShildt_002/e0050_Inheritance/AAA.class
+Classfile /E:/__PROJECT__/JAVA/BookShildt_002/out/production/BookShildt_002/e0050_Inheritance_GOOD_SPLIT_TO_GROUP_OPCODS/AAA.class
   Last modified 15 но€б. 2022 г.; size 979 bytes
   SHA-256 checksum fc2ee189a14077b96f27f1d073d8dda88ed402ac99865154b97af64bbaa28ebb
   Compiled from "AAA.java"
-public class e0050_Inheritance.AAA
+public class e0050_Inheritance_GOOD_SPLIT_TO_GROUP_OPCODS.AAA
   minor version: 0
   major version: 61
   flags: (0x0021) ACC_PUBLIC, ACC_SUPER
-  this_class: #14                         // e0050_Inheritance/AAA
+  this_class: #14                         // e0050_Inheritance_GOOD_SPLIT_TO_GROUP_OPCODS/AAA
   super_class: #2                         // java/lang/Object
   interfaces: 0, fields: 2, methods: 2, attributes: 3
 Constant pool:
@@ -24,14 +24,14 @@ Constant pool:
   #11 = Utf8               out
   #12 = Utf8               Ljava/io/PrintStream;
   
-  #13 = Fieldref           #14.#15        // e0050_Inheritance/AAA.i:I
-  #14 = Class              #16            // e0050_Inheritance/AAA
+  #13 = Fieldref           #14.#15        // e0050_Inheritance_GOOD_SPLIT_TO_GROUP_OPCODS/AAA.i:I
+  #14 = Class              #16            // e0050_Inheritance_GOOD_SPLIT_TO_GROUP_OPCODS/AAA
   #15 = NameAndType        #17:#18        // i:I
-  #16 = Utf8               e0050_Inheritance/AAA
+  #16 = Utf8               e0050_Inheritance_GOOD_SPLIT_TO_GROUP_OPCODS/AAA
   #17 = Utf8               i
   #18 = Utf8               I
   
-  #19 = Fieldref           #14.#20        // e0050_Inheritance/AAA.j:I
+  #19 = Fieldref           #14.#20        // e0050_Inheritance_GOOD_SPLIT_TO_GROUP_OPCODS/AAA.j:I
   #20 = NameAndType        #21:#18        // j:I
   #21 = Utf8               j
   #22 = InvokeDynamic      #0:#23         // #0:makeConcatWithConstants:(II)Ljava/lang/String;
@@ -48,7 +48,7 @@ Constant pool:
   #33 = Utf8               LineNumberTable
   #34 = Utf8               LocalVariableTable
   #35 = Utf8               this
-  #36 = Utf8               Le0050_Inheritance/AAA;
+  #36 = Utf8               Le0050_Inheritance_GOOD_SPLIT_TO_GROUP_OPCODS/AAA;
   #37 = Utf8               show_ij
   #38 = Utf8               SourceFile
   #39 = Utf8               AAA.java
@@ -76,7 +76,7 @@ Constant pool:
     descriptor: I
     flags: (0x0000)
 
-  public e0050_Inheritance.AAA();
+  public e0050_Inheritance_GOOD_SPLIT_TO_GROUP_OPCODS.AAA();
     descriptor: ()V
     flags: (0x0001) ACC_PUBLIC
     Code:
@@ -88,7 +88,7 @@ Constant pool:
         line 3: 0
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
-            0       5     0  this   Le0050_Inheritance/AAA;
+            0       5     0  this   Le0050_Inheritance_GOOD_SPLIT_TO_GROUP_OPCODS/AAA;
 
   void show_ij();
     descriptor: ()V
@@ -112,7 +112,7 @@ Constant pool:
         line 9: 19
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
-            0      20     0  this   Le0050_Inheritance/AAA;
+            0      20     0  this   Le0050_Inheritance_GOOD_SPLIT_TO_GROUP_OPCODS/AAA;
 }
 SourceFile: "AAA.java"
 BootstrapMethods:
@@ -122,7 +122,7 @@ BootstrapMethods:
 InnerClasses:
   public static final #54= #50 of #52;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
 #############################################################################################
-package e0050_Inheritance;
+package e0050_Inheritance_GOOD_SPLIT_TO_GROUP_OPCODS;
 
 public class AAA {
     int i;

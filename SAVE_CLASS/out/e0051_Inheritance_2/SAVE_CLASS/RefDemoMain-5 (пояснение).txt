@@ -1,0 +1,130 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_002/out/production/BookShildt_002/e0051_Inheritance_2/RefDemoMain.class
+  Last modified 18 нояб. 2022 г.; size 834 bytes
+  SHA-256 checksum bf0076d9513eac18ed02eca07b5f81789c2f53e8f3ed332b6782149fd2c8e98e
+  Compiled from "RefDemoMain.java"
+public class e0051_Inheritance_2.RefDemoMain
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #35                         // e0051_Inheritance_2/RefDemoMain
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Class              #8             // e0051_Inheritance_2/BoxWeight
+   #8 = Utf8               e0051_Inheritance_2/BoxWeight
+   #9 = Double             3.0d
+  #11 = Double             5.0d
+  #13 = Double             7.0d
+  #15 = Double             8.37d
+  #17 = Methodref          #7.#18         // e0051_Inheritance_2/BoxWeight."<init>":(DDDD)V
+  #18 = NameAndType        #5:#19         // "<init>":(DDDD)V
+  #19 = Utf8               (DDDD)V
+  #20 = Class              #21            // e0051_Inheritance_2/Box51
+  #21 = Utf8               e0051_Inheritance_2/Box51
+  #22 = Methodref          #20.#3         // e0051_Inheritance_2/Box51."<init>":()V
+  #23 = Fieldref           #24.#25        // java/lang/System.out:Ljava/io/PrintStream;
+  #24 = Class              #26            // java/lang/System
+  #25 = NameAndType        #27:#28        // out:Ljava/io/PrintStream;
+  #26 = Utf8               java/lang/System
+  #27 = Utf8               out
+  #28 = Utf8               Ljava/io/PrintStream;
+  #29 = Methodref          #30.#31        // java/io/PrintStream.println:(Ljava/lang/Object;)V
+  #30 = Class              #32            // java/io/PrintStream
+  #31 = NameAndType        #33:#34        // println:(Ljava/lang/Object;)V
+  #32 = Utf8               java/io/PrintStream
+  #33 = Utf8               println
+  #34 = Utf8               (Ljava/lang/Object;)V
+  #35 = Class              #36            // e0051_Inheritance_2/RefDemoMain
+  #36 = Utf8               e0051_Inheritance_2/RefDemoMain
+  #37 = Utf8               Code
+  #38 = Utf8               LineNumberTable
+  #39 = Utf8               LocalVariableTable
+  #40 = Utf8               this
+  #41 = Utf8               Le0051_Inheritance_2/RefDemoMain;
+  #42 = Utf8               main
+  #43 = Utf8               ([Ljava/lang/String;)V
+  #44 = Utf8               args
+  #45 = Utf8               [Ljava/lang/String;
+  #46 = Utf8               weightbox
+  #47 = Utf8               Le0051_Inheritance_2/BoxWeight;
+  #48 = Utf8               plainbox
+  #49 = Utf8               Le0051_Inheritance_2/Box51;
+  #50 = Utf8               SourceFile
+  #51 = Utf8               RefDemoMain.java
+{
+  public e0051_Inheritance_2.RefDemoMain();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0051_Inheritance_2/RefDemoMain;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=10, locals=3, args_size=1
+         0: new "weightbox" #7        // class e0051_Inheritance_2/BoxWeight
+         3: dup
+         4: ldc2_w        #9                  // double 3.0d
+         7: ldc2_w        #11                 // double 5.0d
+        10: ldc2_w        #13                 // double 7.0d
+        13: ldc2_w        #15                 // double 8.37d
+        16: invokespecial #17                 // Method e0051_Inheritance_2/BoxWeight."<init>":(DDDD)V
+        19: astore_1    "сохранение ИЗ стека В лок.переменную weightbox"
+
+        20: new "plainbox" #20                // class e0051_Inheritance_2/Box51  
+        23: dup
+        24: invokespecial #22                 // Method e0051_Inheritance_2/Box51."<init>":()V
+        27: astore_2    "сохранение ИЗ стека В лок.переменную plainbox" 
+        
+        28: aload_1   "загрузка В стек ИЗ лок.перем. 1 - weightbox "
+        29: astore_2    "сохранение ИЗ стека В лок.переменную 2 - была plainbox, стала weightbox" 
+
+        "Присвоение одному объекту ссылки на другой объект - это просто загрузка из одной ячейки localVars на верх стека ссылки на один объект (aload) и сохранение ее сверху стека в другую ячейку localVars, где уже был другой объкт
+        И теперь дальше операции будут работать с этой другой ячейкой, как будто там лежит обычный объект, загруженный ранее"
+        
+        30: getstatic     #23                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        33: aload_2
+        34: invokevirtual #29                 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+        37: return
+      LineNumberTable:
+        line 5: 0
+        line 6: 20
+        line 8: 28
+        line 10: 30
+        line 11: 37
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      38     0  args   [Ljava/lang/String;
+           20      18     1 weightbox   Le0051_Inheritance_2/BoxWeight;
+           28      10     2 plainbox   Le0051_Inheritance_2/Box51;
+}
+SourceFile: "RefDemoMain.java"
+#############################################################################################
+package e0051_Inheritance_2;
+
+public class RefDemoMain {
+    public static void main(String[] args) {
+        BoxWeight c = new BoxWeight(3, 5, 7, 8.37);
+        Box51 plainbox = new Box51();
+
+        plainbox = weightbox;
+
+        System.out.println(plainbox);
+    }
+}
+---------------------------------------------------------------------------------------------
