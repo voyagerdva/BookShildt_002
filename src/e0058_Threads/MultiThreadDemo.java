@@ -2,9 +2,9 @@ package e0058_Threads;
 
 public class MultiThreadDemo {
     public static void main(String[] args) {
-        new NewThread("ONE");
-        new NewThread("TWO");
-        new NewThread("THREE");
+        new NewThread0("(I )");
+        new NewThread0("(II)");
+        new NewThread0("THREE");
 
         try {
             Thread.sleep(10000);

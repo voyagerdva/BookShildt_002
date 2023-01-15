@@ -1,6 +1,6 @@
 package e0050_Inheritance_GOOD_SPLIT_TO_GROUP_OPCODS;
 
-public class AAA {
+public class CCC {
     int i;
     int j;
 

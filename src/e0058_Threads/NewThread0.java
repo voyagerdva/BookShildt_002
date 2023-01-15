@@ -1,10 +1,10 @@
 package e0058_Threads;
 
-public class NewThread implements Runnable {
+public class NewThread0 implements Runnable {
     String name;
     Thread t;
 
-    NewThread(String threadname) {
+    NewThread0(String threadname) {
         name = threadname;
         t = new Thread(this, name);
         System.out.println("NEW THREAD :  " + t);

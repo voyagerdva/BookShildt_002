@@ -1,6 +1,6 @@
 package e0050_Inheritance_GOOD_SPLIT_TO_GROUP_OPCODS;
 
-public class BBB extends AAA {
+public class BBB extends CCC {
     int k;
 
     void show_k() {
@@ -12,3 +12,4 @@ public class BBB extends AAA {
         System.out.println("k: " + k);
     }
 }
+//
