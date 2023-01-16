@@ -16,7 +16,7 @@ public class Producer implements Runnable {
                 try {
                     store.put();
 //                    Thread.sleep(store.delay);
-                    TimeUnit.SECONDS.sleep(2);
+                    TimeUnit.SECONDS.sleep(1);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -24,3 +24,4 @@ public class Producer implements Runnable {
         }
     }
 }
+//

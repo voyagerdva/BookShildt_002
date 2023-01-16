@@ -1,10 +1,11 @@
-package e0064_Threads_suspend_resyme;
+package e0065_Threads_fabrich_method;
 
-public class Application {
+public class Application1 {
     public static void main(String[] args) {
-        NewThread333 th1 = new NewThread333("(I )");
-        NewThread333 th2 = new NewThread333("(II)");
-//        NewThread333 th3 = new NewThread333("(III)").t.start();
+//        NewThread444 th1 = new NewThread444("(I )");
+//        NewThread444 th2 = new NewThread444("(II)");
+        NewThread444 th1 = NewThread444.createAndStart("(I )");
+        NewThread444 th2 = NewThread444.createAndStart("(II)");
 
         try {
             System.out.println("\n> 1) Application.try{} by thread: >" + Thread.currentThread().getName() + "< is sleep to 1000 millis");

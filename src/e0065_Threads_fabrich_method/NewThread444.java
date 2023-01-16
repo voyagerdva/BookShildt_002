@@ -1,18 +1,24 @@
-package e0064_Threads_suspend_resyme;
+package e0065_Threads_fabrich_method;
 
-public class NewThread333 implements Runnable {
+public class NewThread444 implements Runnable {
     String name;
     Thread t;
     boolean suspendFlag;
 
-    NewThread333(String threadname) {
+    NewThread444(String threadname) {
         name = threadname;
         t = new Thread(this, name);
         System.out.println();
         System.out.println("NEW THREAD: " + t);
         suspendFlag = false;
-        t.start();
+//        t.start();
         System.out.println("finish constructor of " + name + "\n");
+    }
+
+    public static NewThread444 createAndStart(String thName) {
+        NewThread444 myThrd = new NewThread444(thName);
+        myThrd.t.start();
+        return myThrd;
     }
 
     public void run() {
