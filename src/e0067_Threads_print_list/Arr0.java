@@ -2,8 +2,8 @@ package e0067_Threads_print_list;
 
 import java.util.Arrays;
 
-public class Jar {
-    private int SIZE = 50;
+public class Arr0 {
+    private int SIZE = 100;
     private int index = 0;
     public int[] arr = new int[SIZE];
 
@@ -27,7 +27,6 @@ public class Jar {
 
 
     public synchronized void print() {
-//        System.out.println("SIZE / (index + 1) = " + (SIZE / (index + 1)));
         System.out.println(Arrays.toString(arr));
     }
 
@@ -38,28 +37,4 @@ public class Jar {
     public int getSIZE() {
         return SIZE;
     }
-
-    public void stopTrue() {
-        stop = true;
-    }
-
-    public void stopFalse(Boolean s) {
-        stop = false;
-    }
-
 }
-
-
-
-//        try {
-//            for (int i = 0; i < 5; i++) {
-//                int number = min_number + (int) (Math.random() * max_number);
-//
-//                arr[index] = number;
-//                System.out.printf("%s : %s\n", index, Thread.currentThread().getName());
-//                index++;
-//            }
-//
-//        } catch (ArrayIndexOutOfBoundsException e) {
-//            System.err.println("OUT OF INDEX");
-//        }

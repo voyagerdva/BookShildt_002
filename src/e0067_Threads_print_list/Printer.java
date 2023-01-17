@@ -3,16 +3,14 @@ package e0067_Threads_print_list;
 public class Printer implements Runnable {
     Thread t;
     String name;
-    Jar jar;
+    Arr0 arr;
 
     int min_delay = 50;
     int max_delay = 150;
 
-
-
-    Printer(String n, Jar j) {
+    Printer(String n, Arr0 a) {
         name = n;
-        jar = j;
+        arr = a;
         t = new Thread(this, name);
         t.start();
         System.out.printf("%s was created...\n", t);
@@ -22,10 +20,8 @@ public class Printer implements Runnable {
     public void run() {
         System.out.println(t.getState());
 
-        while (jar.getIndex() < jar.getSIZE()) {
-//        while (true) {
-//        for (int i=0; i < jar.getSIZE(); i++) {
-            jar.print();
+        while (arr.getIndex() < arr.getSIZE()) {
+            arr.print();
 
             int delay = min_delay + (int) (Math.random() * max_delay);
             try {
@@ -35,7 +31,7 @@ public class Printer implements Runnable {
             }
         }
 
-        jar.print();
+        arr.print();
 
     }
 }

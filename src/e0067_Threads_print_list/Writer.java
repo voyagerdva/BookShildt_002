@@ -3,11 +3,11 @@ package e0067_Threads_print_list;
 public class Writer implements Runnable {
     Thread t;
     String name;
-    Jar jar;
+    Arr0 arr;
 
-    Writer(String n, Jar j) {
+    Writer(String n, Arr0 a) {
         name = n;
-        jar = j;
+        arr = a;
         t = new Thread(this, name);
         t.start();
         System.out.printf("%s was created...\n", t);
@@ -17,9 +17,9 @@ public class Writer implements Runnable {
     public void run() {
         System.out.println(t + " : " + t.getState());
 
-        while (jar.getIndex() < jar.getSIZE()) {
+        while (arr.getIndex() < arr.getSIZE()) {
             try {
-                jar.write();
+                arr.write();
                 Thread.sleep(100);
             } catch (InterruptedException e) {
                 e.printStackTrace();
