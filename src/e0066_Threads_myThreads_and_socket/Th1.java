@@ -52,7 +52,7 @@ public class Th1 implements Runnable {
             socket.close();
             server.close();
         } catch (Exception e) {
-            System.err.println("BROKEN:");
+            System.err.println("-= EXCEPTION HANDLER =-\nBROKEN with EXCEPTION:");
             e.printStackTrace();
         }
     }
