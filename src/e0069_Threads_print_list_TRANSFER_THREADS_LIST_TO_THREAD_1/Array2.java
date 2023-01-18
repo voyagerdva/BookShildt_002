@@ -1,24 +1,16 @@
-package e0067_Threads_print_list;
+package e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1;
 
 import java.util.Arrays;
 
-public class Arr0 {
-    private int SIZE = 100;
+public class Array2 {
+    private int SIZE = 50;
     private int index = 0;
     public int[] arr = new int[SIZE];
-
 
     int min_number = 0;
     int max_number = 100;
 
-    private boolean stop = false;
-
     public synchronized void write() throws InterruptedException, ArrayIndexOutOfBoundsException {
-
-        while (stop) {
-            wait();
-        }
-
         int number = min_number + (int) (Math.random() * max_number);
         arr[index] = number;
         System.out.printf("%s : %s\n", index, Thread.currentThread().getName());

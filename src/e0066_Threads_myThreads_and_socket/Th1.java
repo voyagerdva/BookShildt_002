@@ -40,8 +40,8 @@ public class Th1 implements Runnable {
 
             System.out.println("Connection accepted: " + socket);
 
-            ois = new ObjectInputStream(socket.getInputStream());
             oos = new ObjectOutputStream(socket.getOutputStream());
+            ois = new ObjectInputStream(socket.getInputStream());
 
             while (socket.isConnected()) {
                 Bag bag = (Bag) ois.readObject();

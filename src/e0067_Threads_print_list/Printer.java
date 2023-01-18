@@ -1,14 +1,14 @@
 package e0067_Threads_print_list;
 
-public class Printer implements Runnable {
+public class Printer extends Thread implements Runnable {
     Thread t;
     String name;
-    Arr0 arr;
+    Array0 arr;
 
     int min_delay = 50;
     int max_delay = 150;
 
-    Printer(String n, Arr0 a) {
+    Printer(String n, Array0 a) {
         name = n;
         arr = a;
         t = new Thread(this, name);

@@ -1,11 +1,11 @@
 package e0067_Threads_print_list;
 
-public class Writer implements Runnable {
+public class Writer extends Thread implements Runnable {
     Thread t;
     String name;
-    Arr0 arr;
+    Array0 arr;
 
-    Writer(String n, Arr0 a) {
+    Writer(String n, Array0 a) {
         name = n;
         arr = a;
         t = new Thread(this, name);
@@ -16,6 +16,7 @@ public class Writer implements Runnable {
     @Override
     public void run() {
         System.out.println(t + " : " + t.getState());
+
 
         while (arr.getIndex() < arr.getSIZE()) {
             try {
