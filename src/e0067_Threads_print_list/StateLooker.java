@@ -3,15 +3,17 @@ package e0067_Threads_print_list;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StateLooker implements Runnable {
-    Thread t;
+public class StateLooker extends Thread {
     String name;
-    java.util.List<Thread> subwriters = new ArrayList<>();
+        java.util.List<Thread> subwriters = new ArrayList<>();
+    Array0 array0;
+    int iteration = 1;
 
 
-    StateLooker(String n, List<Thread> th) {
+    StateLooker(String n, List<Thread> th, Array0 arr) {
+        array0 = arr;
         name = n;
-        t = new Thread(this, name);
+        setName(name);
 
         th.forEach(t -> {
             subwriters.add(t);
@@ -21,40 +23,28 @@ public class StateLooker implements Runnable {
             System.out.printf("%s : %s\n", s.getName(), s.getState());
         });
 
-
-//        subwriters.set(0, th.get(0));
-//        subwriters.set(1, th.get(1));
-//        subwriters.set(2, th.get(2));
-
-        t.start();
         System.out.println();
-        System.out.printf("%s was created...\n", t);
+        System.out.printf("%s was created...\n", name);
         System.out.println();
     }
 
 
     @Override
     public void run() {
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        System.out.println(t + " : " + t.getState());
+        while (!array0.getStopFlag()) {
+            System.out.printf("-= Iteration %s =-\n", iteration);
 
-        subwriters.forEach(s -> {
-            System.out.printf("%s : %s\n", s.getName(), s.getState());
-        });
-//        while (true) {
-//            try {
-//                wait();
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            }
-//
-//            System.out.printf("# thread %s : ");
-//
-//
-//        }
+            subwriters.forEach(s -> {
+                System.out.printf("%s : %s\n", s.getName(), s.getState());
+            });
+
+            try {
+                Thread.sleep(50);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            iteration++;
+        }
     }
 }

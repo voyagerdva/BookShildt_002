@@ -1,7 +1,6 @@
 package e0067_Threads_print_list;
 
-public class Printer extends Thread implements Runnable {
-    Thread t;
+public class Printer extends Thread {
     String name;
     Array0 arr;
 
@@ -10,15 +9,14 @@ public class Printer extends Thread implements Runnable {
 
     Printer(String n, Array0 a) {
         name = n;
+        setName(name);
         arr = a;
-        t = new Thread(this, name);
-        t.start();
-        System.out.printf("%s was created...\n", t);
+        System.out.printf("%s was created...\n", name);
     }
 
     @Override
     public void run() {
-        System.out.println(t.getState());
+        System.out.println(getState());
 
         while (arr.getIndex() < arr.getSIZE()) {
             arr.print();
@@ -32,6 +30,7 @@ public class Printer extends Thread implements Runnable {
         }
 
         arr.print();
+        arr.stop();
 
     }
 }

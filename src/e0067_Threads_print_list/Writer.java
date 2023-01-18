@@ -1,22 +1,19 @@
 package e0067_Threads_print_list;
 
-public class Writer extends Thread implements Runnable {
-    Thread t;
+public class Writer extends Thread {
     String name;
     Array0 arr;
 
     Writer(String n, Array0 a) {
         name = n;
+        setName(name);
         arr = a;
-        t = new Thread(this, name);
-        t.start();
-        System.out.printf("%s was created...\n", t);
+        System.out.printf("%s was created...\n", name);
     }
 
     @Override
     public void run() {
-        System.out.println(t + " : " + t.getState());
-
+//        System.out.println(name + " : " + getState());
 
         while (arr.getIndex() < arr.getSIZE()) {
             try {
@@ -27,8 +24,6 @@ public class Writer extends Thread implements Runnable {
             } catch (ArrayIndexOutOfBoundsException e) {
                 System.err.printf("%s : %s : OUT OF INDEX ARRAY\n", Thread.currentThread().getName(), e);
             }
-
         }
-
     }
 }

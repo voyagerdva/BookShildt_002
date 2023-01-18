@@ -21,11 +21,11 @@ public class Application_6 {
         printer.start();
 
 
-//        int[] index = {3, 5, 7, 9};
-//
-//        for (int i : index) {
-//            subscribers.add(writers.get(i));
-//        }
+        int[] index = {3, 5, 7, 8};
+
+        for (int i : index) {
+            subscribers.add(writers.get(i));
+        }
         subscribers.add(printer);
         System.out.println("-------------------------------");
 
