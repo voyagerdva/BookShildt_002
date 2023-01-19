@@ -3,7 +3,7 @@ package e0067_Threads_print_list;
 import java.util.Arrays;
 
 public class Array0 {
-    int a, b, c, d = 1;
+    double b = 1.123D;
 
     private int SIZE = 150;
     private int index = 0;
@@ -17,21 +17,22 @@ public class Array0 {
     public synchronized void write() throws InterruptedException, ArrayIndexOutOfBoundsException {
         int number = min_number + (int) (Math.random() * max_number);
         arr[index] = number;
-//        System.out.printf("%s : %s\n", index, Thread.currentThread().getName());
         index++;
 
-        for (int j = 0; j < 200; j++) {
-            a *= j;
+        for (int j = 1; j < 10000; j++) {
+            b *= j;
         }
+//        System.err.println("=============== : " + b);
+
     }
 
 
     public synchronized void print() {
         System.out.println(Arrays.toString(arr));
-        for (int j = 0; j < 200; j++) {
+        for (int j = 1; j < 10000; j++) {
             b *= j;
         }
-
+//        System.err.println("=============== : " + b);
 
         try {
             Thread.sleep(10);

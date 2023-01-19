@@ -3,6 +3,7 @@ package e0067_Threads_print_list;
 public class Writer extends Thread {
     String name;
     Array0 arr;
+    double b = 1.123D;
 
     Writer(String n, Array0 a) {
         name = n;
@@ -15,7 +16,13 @@ public class Writer extends Thread {
     public void run() {
 //        System.out.println(name + " : " + getState());
 
+
         while (arr.getIndex() < arr.getSIZE()) {
+            for (int j = 1; j < 10000; j++) {
+                arr.b *= j;
+            }
+            System.err.println("=============== : " + b);
+
             try {
                 arr.write();
                 Thread.sleep(100);

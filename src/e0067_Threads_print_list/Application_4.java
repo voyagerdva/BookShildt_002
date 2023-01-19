@@ -21,7 +21,7 @@ public class Application_4 {
         Printer printer = new Printer("<Printer>", arr);
         printer.start();
 
-        int[] index = {3, 5, 7, 8, 1,2,6};
+        int[] index = {1,2,3,4, 5,6, 7, 8,9};
 
         for (int i : index) {
             subscribers.add(writers.get(i));

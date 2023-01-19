@@ -6,7 +6,8 @@ public class Printer2 extends Thread {
 
     Monitor monitor;
 
-    int a, b, c, d = 1;
+    int a = 1;
+    int b = 1;
 
     int min_delay = 50;
     int max_delay = 150;
@@ -45,7 +46,7 @@ public class Printer2 extends Thread {
 //            System.out.printf("Inside FOR. Thread %s : %s\n",
 //                    Thread.currentThread().getName(),
 //                    Thread.currentThread().getState());
-            for (int j = 0; j < 100; j++) {
+            for (int j = 1; j < 100; j++) {
                 a *= j;
             }
         }

@@ -39,12 +39,19 @@ public class StateLooker extends Thread {
             });
 
             try {
-                Thread.sleep(50);
+                Thread.sleep(20);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
 
             iteration++;
         }
+
+        System.out.printf("-= Iteration %s =-\n", iteration);
+
+        subwriters.forEach(s -> {
+            System.out.printf("%s : %s\n", s.getName(), s.getState());
+        });
+
     }
 }
