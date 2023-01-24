@@ -1,27 +1,22 @@
-package e0066_Threads_myThreads_and_socket;
+package e0070_Threads_and_socket_try_block;
 
-import java.io.*;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-import static java.lang.Thread.sleep;
-
-public class Th2 implements Runnable {
+public class ClientThread7 extends Thread {
+    Monitor7 monitor;
     String name;
-    Thread t;
     int PORT;
 
-    Th2(String n, int port) {
+    ClientThread7(String n, int port, Monitor7 mon) {
+        monitor = mon;
         name = n;
-        t = new Thread(this, name);
+        setName(name);
         PORT = port;
-        System.out.printf("New thread %s created.\n", name);
-    }
-
-    public static Th2 createAndStart(String name, int port) {
-        Th2 th = new Th2(name, port);
-        th.t.start();
-        return th;
+        System.out.printf("%s : %s : %s  was created...\n", getName(), getPriority(), getState());
     }
 
     @Override
@@ -36,7 +31,7 @@ public class Th2 implements Runnable {
 
             int i = 0;
             for (int j = 0; j < 4; j++) {
-                Bag bag = new Bag(j, (j * j));
+                Bag7 bag = new Bag7(j, (j * j));
                 System.out.println("sended: " + bag);
                 oos.writeObject(bag);
                 sleep(200);
@@ -54,4 +49,3 @@ public class Th2 implements Runnable {
         }
     }
 }
-//
