@@ -30,3 +30,4 @@ public class Array2 {
         return SIZE;
     }
 }
+//

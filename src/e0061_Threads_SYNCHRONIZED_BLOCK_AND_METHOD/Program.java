@@ -1,4 +1,4 @@
-package e0061_Threads_wait_notify_1;
+package e0061_Threads_SYNCHRONIZED_BLOCK_AND_METHOD;
 
 public class Program {
     public static void main(String[] args) {
@@ -9,4 +9,3 @@ public class Program {
         new Thread(consumer, "CONSUMER").start();
     }
 }
-//
