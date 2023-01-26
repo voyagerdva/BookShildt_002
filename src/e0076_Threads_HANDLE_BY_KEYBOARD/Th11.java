@@ -1,16 +1,15 @@
-package e0074_Threads_BLOCKED_try_2;
+package e0076_Threads_HANDLE_BY_KEYBOARD;
 
-public class Th10 extends Thread {
+public class Th11 extends Thread {
     long count = 0;
     Object monitor;
-//    Monitor10 monitor;
+
     public boolean conditionWait;
     public boolean conditionNotify;
     public boolean alive;
     public boolean conditionWhileTrue;
 
-    Th10(String n, Object monitor) {
-//    Th10(String n, Monitor10 monitor) {
+    Th11(String n, Object monitor) {
         setName(n);
         this.monitor = monitor;
         conditionWait = false;
@@ -19,18 +18,16 @@ public class Th10 extends Thread {
         System.out.printf("New thread %s created.\n", getName());
     }
 
-    public static Th10 createAndStart (String name, Object monitor) {
-//    public static Th10 createAndStart (String name, Monitor10 monitor) {
-        Th10 th = new Th10(name, monitor);
+    public static Th11 createAndStart(String name, Object monitor) {
+        Th11 th = new Th11(name, monitor);
         th.start();
         return th;
     }
 
     @Override
-    public void run () {
+    public void run() {
         while (alive) {
             synchronized (monitor) {
-//                monitor.makeWork();
 
                 if (conditionWait) {
                     try {
@@ -59,24 +56,12 @@ public class Th10 extends Thread {
         }
     }
 
-    public void monitorNotify (boolean conditionNotify) {
+    public void monitorNotify(boolean conditionNotify) {
         this.conditionNotify = conditionNotify;
     }
 
-    public void monitorWait (boolean wait) {
+    public void monitorWait(boolean wait) {
         this.conditionWait = wait;
     }
-
-//    public void sayWait() {
-//        try {
-//            monitor.wait();
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-//    }
-//
-//    public void sayNotify() {
-//        monitor.notify();
-//    }
 
 }

@@ -1,4 +1,4 @@
-package e0074_Threads_BLOCKED_try_2;
+package e0074_Threads_MY_INVESTIGATIONS_WITH_OBJ_AND_MONITOR_BASED_ON_ANDREYS_PROJECT;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,24 +6,12 @@ import java.util.List;
 public class Application10 {
     public static void main(String[] args) {
 
-        Object obj = new Object();
-        Monitor10 monitor = new Monitor10();
+//        Object obj = new Object();
+        Monitor10 obj = new Monitor10();
 
         List<Thread> thList = new ArrayList<>();
         thList.add(Th10.createAndStart("Th_1", obj));
-        try {
-            Thread.sleep(100);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
         thList.add(Th10.createAndStart("Th_2",  obj));
-        try {
-            Thread.sleep(100);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
         thList.add(Th10.createAndStart("Th_3",  obj));
 
 

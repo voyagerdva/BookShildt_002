@@ -1,4 +1,4 @@
-package e0074_Threads_BLOCKED_try_2;
+package e0074_Threads_MY_INVESTIGATIONS_WITH_OBJ_AND_MONITOR_BASED_ON_ANDREYS_PROJECT;
 
 public class Monitor10 {
     public boolean STOP = false;
@@ -12,7 +12,6 @@ public class Monitor10 {
             a *= j;
             j++;
 
-
             if (a > 1_000_000_000L) {
                 a = 1;
             }
@@ -20,7 +19,7 @@ public class Monitor10 {
             if (STOP == true) {
                 System.out.println("INSIDE IF: STOP = " + STOP);
                 STOP = false;
-                break;
+                return;
             }
 //            for (int i = 0; i < 5; i++) {
 //                a = a + j;
