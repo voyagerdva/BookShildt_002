@@ -1,0 +1,49 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_002/out/production/BookShildt_002/e0084_Annotations_3/What.class
+  Last modified 2 февр. 2023 г.; size 334 bytes
+  SHA-256 checksum f31d6986015a3eee67da04fc41b3c311113cfdaf316ac2a4677a0699c31a887b
+  Compiled from "What.java"
+public interface e0084_Annotations_3.What extends java.lang.annotation.Annotation
+  minor version: 0
+  major version: 61
+  flags: (0x2601) ACC_PUBLIC, ACC_INTERFACE, ACC_ABSTRACT, ACC_ANNOTATION
+  this_class: #1                          // e0084_Annotations_3/What
+  super_class: #3                         // java/lang/Object
+  interfaces: 1, fields: 0, methods: 1, attributes: 2
+Constant pool:
+   #1 = Class              #2             // e0084_Annotations_3/What
+   #2 = Utf8               e0084_Annotations_3/What
+   #3 = Class              #4             // java/lang/Object
+   #4 = Utf8               java/lang/Object
+   #5 = Class              #6             // java/lang/annotation/Annotation
+   #6 = Utf8               java/lang/annotation/Annotation
+   #7 = Utf8               description
+   #8 = Utf8               ()Ljava/lang/String;
+   #9 = Utf8               SourceFile
+  #10 = Utf8               What.java
+  #11 = Utf8               RuntimeVisibleAnnotations
+  #12 = Utf8               Ljava/lang/annotation/Retention;
+  #13 = Utf8               value
+  #14 = Utf8               Ljava/lang/annotation/RetentionPolicy;
+  #15 = Utf8               RUNTIME
+{
+  public abstract java.lang.String description();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+}
+SourceFile: "What.java"
+RuntimeVisibleAnnotations:
+  0: #12(#13=e#14.#15)
+    java.lang.annotation.Retention(
+      value=Ljava/lang/annotation/RetentionPolicy;.RUNTIME
+    )
+#############################################################################################
+package e0084_Annotations_3;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+@Retention(RetentionPolicy.RUNTIME)
+public @interface What {
+    String description();
+}
+---------------------------------------------------------------------------------------------

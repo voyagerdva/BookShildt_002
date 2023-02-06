@@ -1,5 +1,8 @@
 package e0076_Threads_HANDLE_BY_KEYBOARD;
 
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Future;
+
 public class Th11 extends Thread {
     long count = 0;
     Object monitor;
@@ -26,6 +29,21 @@ public class Th11 extends Thread {
 
     @Override
     public void run() {
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("AFTER FUTURE");
+        try {
+            Object result = ((Future) monitor).get();
+            System.out.println(result);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+
         while (alive) {
             synchronized (monitor) {
 

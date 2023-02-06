@@ -1,0 +1,302 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_002/out/production/BookShildt_002/e0080_ENUM_3/Apple4.class
+  Last modified 31 џэт. 2023 у.; size 2324 bytes
+  SHA-256 checksum 0e1d2a362601427a0b5c2d42fdb92655cfb2b2fbae7f2bf09dcf2a7d77feecfb
+  Compiled from "Apple4.java"
+public final class e0080_ENUM_3.Apple4
+  minor version: 0
+  major version: 61
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #8                          // e0080_ENUM_3/Apple4
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 5, methods: 4, attributes: 3
+Constant pool:
+    #1 = Methodref          #2.#3         // java/lang/Object."<init>":()V
+    #2 = Class              #4            // java/lang/Object
+    #3 = NameAndType        #5:#6         // "<init>":()V
+    #4 = Utf8               java/lang/Object
+    #5 = Utf8               <init>
+    #6 = Utf8               ()V
+    #7 = Fieldref           #8.#9         // e0080_ENUM_3/Apple4.number:I
+    #8 = Class              #10           // e0080_ENUM_3/Apple4
+    #9 = NameAndType        #11:#12       // number:I
+   #10 = Utf8               e0080_ENUM_3/Apple4
+   #11 = Utf8               number
+   #12 = Utf8               I
+   #13 = Fieldref           #8.#14        // e0080_ENUM_3/Apple4.kind:Ljava/lang/String;
+   #14 = NameAndType        #15:#16       // kind:Ljava/lang/String;
+   #15 = Utf8               kind
+   #16 = Utf8               Ljava/lang/String;
+   #17 = Methodref          #18.#19       // java/lang/Class.getFields:()[Ljava/lang/reflect/Field;
+   #18 = Class              #20           // java/lang/Class
+   #19 = NameAndType        #21:#22       // getFields:()[Ljava/lang/reflect/Field;
+   #20 = Utf8               java/lang/Class
+   #21 = Utf8               getFields
+   #22 = Utf8               ()[Ljava/lang/reflect/Field;
+   #23 = Methodref          #24.#25       // java/util/Arrays.stream:([Ljava/lang/Object;)Ljava/util/stream/Stream;
+   #24 = Class              #26           // java/util/Arrays
+   #25 = NameAndType        #27:#28       // stream:([Ljava/lang/Object;)Ljava/util/stream/Stream;
+   #26 = Utf8               java/util/Arrays
+   #27 = Utf8               stream
+   #28 = Utf8               ([Ljava/lang/Object;)Ljava/util/stream/Stream;
+   #29 = InvokeDynamic      #0:#30        // #0:test:(Ljava/lang/String;)Ljava/util/function/Predicate;
+   #30 = NameAndType        #31:#32       // test:(Ljava/lang/String;)Ljava/util/function/Predicate;
+   #31 = Utf8               test
+   #32 = Utf8               (Ljava/lang/String;)Ljava/util/function/Predicate;
+   #33 = InterfaceMethodref #34.#35       // java/util/stream/Stream.filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+   #34 = Class              #36           // java/util/stream/Stream
+   #35 = NameAndType        #37:#38       // filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+   #36 = Utf8               java/util/stream/Stream
+   #37 = Utf8               filter
+   #38 = Utf8               (Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+   #39 = InterfaceMethodref #34.#40       // java/util/stream/Stream.findFirst:()Ljava/util/Optional;
+   #40 = NameAndType        #41:#42       // findFirst:()Ljava/util/Optional;
+   #41 = Utf8               findFirst
+   #42 = Utf8               ()Ljava/util/Optional;
+   #43 = Methodref          #44.#45       // java/util/Optional.get:()Ljava/lang/Object;
+   #44 = Class              #46           // java/util/Optional
+   #45 = NameAndType        #47:#48       // get:()Ljava/lang/Object;
+   #46 = Utf8               java/util/Optional
+   #47 = Utf8               get
+   #48 = Utf8               ()Ljava/lang/Object;
+   #49 = Class              #50           // java/lang/reflect/Field
+   #50 = Utf8               java/lang/reflect/Field
+   #51 = Methodref          #49.#52       // java/lang/reflect/Field.get:(Ljava/lang/Object;)Ljava/lang/Object;
+   #52 = NameAndType        #47:#53       // get:(Ljava/lang/Object;)Ljava/lang/Object;
+   #53 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+   #54 = Class              #55           // java/lang/IllegalAccessException
+   #55 = Utf8               java/lang/IllegalAccessException
+   #56 = Methodref          #54.#57       // java/lang/IllegalAccessException.printStackTrace:()V
+   #57 = NameAndType        #58:#6        // printStackTrace:()V
+   #58 = Utf8               printStackTrace
+   #59 = Methodref          #49.#60       // java/lang/reflect/Field.getName:()Ljava/lang/String;
+   #60 = NameAndType        #61:#62       // getName:()Ljava/lang/String;
+   #61 = Utf8               getName
+   #62 = Utf8               ()Ljava/lang/String;
+   #63 = Methodref          #64.#65       // java/lang/String.equals:(Ljava/lang/Object;)Z
+   #64 = Class              #66           // java/lang/String
+   #65 = NameAndType        #67:#68       // equals:(Ljava/lang/Object;)Z
+   #66 = Utf8               java/lang/String
+   #67 = Utf8               equals
+   #68 = Utf8               (Ljava/lang/Object;)Z
+   #69 = String             #70           // RRR1
+   #70 = Utf8               RRR1
+   #71 = Methodref          #8.#72        // e0080_ENUM_3/Apple4."<init>":(ILjava/lang/String;)V
+   #72 = NameAndType        #5:#73        // "<init>":(ILjava/lang/String;)V
+   #73 = Utf8               (ILjava/lang/String;)V
+   #74 = Fieldref           #8.#75        // e0080_ENUM_3/Apple4.RED:Le0080_ENUM_3/Apple4;
+   #75 = NameAndType        #76:#77       // RED:Le0080_ENUM_3/Apple4;
+   #76 = Utf8               RED
+   #77 = Utf8               Le0080_ENUM_3/Apple4;
+   #78 = String             #79           // GGG2
+   #79 = Utf8               GGG2
+   #80 = Fieldref           #8.#81        // e0080_ENUM_3/Apple4.GREEN:Le0080_ENUM_3/Apple4;
+   #81 = NameAndType        #82:#77       // GREEN:Le0080_ENUM_3/Apple4;
+   #82 = Utf8               GREEN
+   #83 = String             #84           // BBB3
+   #84 = Utf8               BBB3
+   #85 = Fieldref           #8.#86        // e0080_ENUM_3/Apple4.BLUE:Le0080_ENUM_3/Apple4;
+   #86 = NameAndType        #87:#77       // BLUE:Le0080_ENUM_3/Apple4;
+   #87 = Utf8               BLUE
+   #88 = Utf8               Code
+   #89 = Utf8               LineNumberTable
+   #90 = Utf8               LocalVariableTable
+   #91 = Utf8               this
+   #92 = Utf8               i
+   #93 = Utf8               s
+   #94 = Utf8               valueOf
+   #95 = Utf8               (Ljava/lang/String;)Le0080_ENUM_3/Apple4;
+   #96 = Utf8               e
+   #97 = Utf8               Ljava/lang/IllegalAccessException;
+   #98 = Utf8               name
+   #99 = Utf8               field
+  #100 = Utf8               Ljava/lang/reflect/Field;
+  #101 = Utf8               f
+  #102 = Utf8               StackMapTable
+  #103 = Utf8               lambda$valueOf$0
+  #104 = Utf8               (Ljava/lang/String;Ljava/lang/reflect/Field;)Z
+  #105 = Utf8               <clinit>
+  #106 = Utf8               SourceFile
+  #107 = Utf8               Apple4.java
+  #108 = Utf8               BootstrapMethods
+  #109 = MethodHandle       6:#110        // REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #110 = Methodref          #111.#112     // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #111 = Class              #113          // java/lang/invoke/LambdaMetafactory
+  #112 = NameAndType        #114:#115     // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #113 = Utf8               java/lang/invoke/LambdaMetafactory
+  #114 = Utf8               metafactory
+  #115 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #116 = MethodType         #68           //  (Ljava/lang/Object;)Z
+  #117 = MethodHandle       6:#118        // REF_invokeStatic e0080_ENUM_3/Apple4.lambda$valueOf$0:(Ljava/lang/String;Ljava/lang/reflect/Field;)Z
+  #118 = Methodref          #8.#119       // e0080_ENUM_3/Apple4.lambda$valueOf$0:(Ljava/lang/String;Ljava/lang/reflect/Field;)Z
+  #119 = NameAndType        #103:#104     // lambda$valueOf$0:(Ljava/lang/String;Ljava/lang/reflect/Field;)Z
+  #120 = MethodType         #121          //  (Ljava/lang/reflect/Field;)Z
+  #121 = Utf8               (Ljava/lang/reflect/Field;)Z
+  #122 = Utf8               InnerClasses
+  #123 = Class              #124          // java/lang/invoke/MethodHandles$Lookup
+  #124 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #125 = Class              #126          // java/lang/invoke/MethodHandles
+  #126 = Utf8               java/lang/invoke/MethodHandles
+  #127 = Utf8               Lookup
+{
+  public static final e0080_ENUM_3.Apple4 RED;
+    descriptor: Le0080_ENUM_3/Apple4;
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public static final e0080_ENUM_3.Apple4 GREEN;
+    descriptor: Le0080_ENUM_3/Apple4;
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public static final e0080_ENUM_3.Apple4 BLUE;
+    descriptor: Le0080_ENUM_3/Apple4;
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  e0080_ENUM_3.Apple4(int, java.lang.String);
+    descriptor: (ILjava/lang/String;)V
+    flags: (0x0000)
+    Code:
+      stack=2, locals=3, args_size=3
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: iload_1
+         6: putfield      #7                  // Field number:I
+         9: aload_0
+        10: aload_2
+        11: putfield      #13                 // Field kind:Ljava/lang/String;
+        14: return
+      LineNumberTable:
+        line 14: 0
+        line 15: 4
+        line 16: 9
+        line 17: 14
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      15     0  this   Le0080_ENUM_3/Apple4;
+            0      15     1     i   I
+            0      15     2     s   Ljava/lang/String;
+
+  public static e0080_ENUM_3.Apple4 valueOf(java.lang.String);
+    descriptor: (Ljava/lang/String;)Le0080_ENUM_3/Apple4;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=4, args_size=1
+         0: ldc           #8                  // class e0080_ENUM_3/Apple4
+         2: invokevirtual #17                 // Method java/lang/Class.getFields:()[Ljava/lang/reflect/Field;
+         5: invokestatic  #23                 // Method java/util/Arrays.stream:([Ljava/lang/Object;)Ljava/util/stream/Stream;
+         8: aload_0
+         9: invokedynamic #29,  0             // InvokeDynamic #0:test:(Ljava/lang/String;)Ljava/util/function/Predicate;
+        14: invokeinterface #33,  2           // InterfaceMethod java/util/stream/Stream.filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+        19: invokeinterface #39,  1           // InterfaceMethod java/util/stream/Stream.findFirst:()Ljava/util/Optional;
+        24: invokevirtual #43                 // Method java/util/Optional.get:()Ljava/lang/Object;
+        27: checkcast     #49                 // class java/lang/reflect/Field
+        30: astore_1
+        31: aconst_null
+        32: astore_2
+        33: aload_1
+        34: aconst_null
+        35: invokevirtual #51                 // Method java/lang/reflect/Field.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        38: checkcast     #8                  // class e0080_ENUM_3/Apple4
+        41: astore_2
+        42: goto          50
+        45: astore_3
+        46: aload_3
+        47: invokevirtual #56                 // Method java/lang/IllegalAccessException.printStackTrace:()V
+        50: aload_2
+        51: areturn
+      Exception table:
+         from    to  target type
+            33    42    45   Class java/lang/IllegalAccessException
+      LineNumberTable:
+        line 20: 0
+        line 22: 19
+        line 24: 31
+        line 26: 33
+        line 29: 42
+        line 27: 45
+        line 28: 46
+        line 30: 50
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           46       4     3     e   Ljava/lang/IllegalAccessException;
+            0      52     0  name   Ljava/lang/String;
+           31      21     1 field   Ljava/lang/reflect/Field;
+           33      19     2     f   Le0080_ENUM_3/Apple4;
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 45
+          locals = [ class java/lang/String, class java/lang/reflect/Field, class e0080_ENUM_3/Apple4 ]
+          stack = [ class java/lang/IllegalAccessException ]
+        frame_type = 4 /* same */
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=4, locals=0, args_size=0
+         0: new           #8                  // class e0080_ENUM_3/Apple4
+         3: dup
+         4: iconst_1
+         5: ldc           #69                 // String RRR1
+         7: invokespecial #71                 // Method "<init>":(ILjava/lang/String;)V
+        10: putstatic     #74                 // Field RED:Le0080_ENUM_3/Apple4;
+        13: new           #8                  // class e0080_ENUM_3/Apple4
+        16: dup
+        17: iconst_2
+        18: ldc           #78                 // String GGG2
+        20: invokespecial #71                 // Method "<init>":(ILjava/lang/String;)V
+        23: putstatic     #80                 // Field GREEN:Le0080_ENUM_3/Apple4;
+        26: new           #8                  // class e0080_ENUM_3/Apple4
+        29: dup
+        30: iconst_3
+        31: ldc           #83                 // String BBB3
+        33: invokespecial #71                 // Method "<init>":(ILjava/lang/String;)V
+        36: putstatic     #85                 // Field BLUE:Le0080_ENUM_3/Apple4;
+        39: return
+      LineNumberTable:
+        line 7: 0
+        line 8: 13
+        line 9: 26
+}
+SourceFile: "Apple4.java"
+BootstrapMethods:
+  0: #109 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #116 (Ljava/lang/Object;)Z
+      #117 REF_invokeStatic e0080_ENUM_3/Apple4.lambda$valueOf$0:(Ljava/lang/String;Ljava/lang/reflect/Field;)Z
+      #120 (Ljava/lang/reflect/Field;)Z
+InnerClasses:
+  public static final #127= #123 of #125; // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+#############################################################################################
+package e0080_ENUM_3;
+
+import java.lang.reflect.Field;
+import java.util.Arrays;
+
+final public class Apple4 {
+    final public static Apple4 RED = new Apple4(1, "RRR1");
+    final public static Apple4 GREEN = new Apple4(2, "GGG2");
+    final public static Apple4 BLUE = new Apple4(3, "BBB3");
+
+    private int number;
+    private String kind;
+
+    Apple4(int i, String s) {
+        number = i;
+        kind = s;
+    }
+
+    public static Apple4 valueOf(String name) {
+        Field field = Arrays.stream(Apple4.class.getFields()).filter(
+                f -> f.getName().equals(name)
+        ).findFirst().get();
+
+        Apple4 f = null;
+        try {
+            f = (Apple4) field.get(null);
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+        return f;
+    }
+}
+---------------------------------------------------------------------------------------------

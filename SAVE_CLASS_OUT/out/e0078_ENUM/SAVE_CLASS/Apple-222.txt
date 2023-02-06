@@ -1,0 +1,187 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_002/out/production/BookShildt_002/e0078_ENUM/Apple.class
+  Last modified 31 ���. 2023 �.; size 1200 bytes
+  SHA-256 checksum 60cf1030a1ec0ffe999315cb90efa7dea733468d8bfec7549fd19d0b25903f36
+  Compiled from "Apple.java"
+public final class e0078_ENUM.Apple extends java.lang.Enum<e0078_ENUM.Apple>
+  minor version: 0
+  major version: 61
+  flags: (0x4031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER, ACC_ENUM
+  this_class: #1                          // e0078_ENUM/Apple
+  super_class: #23                        // java/lang/Enum
+  interfaces: 0, fields: 5, methods: 6, attributes: 2
+Constant pool:
+   #1 = Class              #2             // e0078_ENUM/Apple
+   #2 = Utf8               e0078_ENUM/Apple
+   #3 = Fieldref           #1.#4          // e0078_ENUM/Apple.Jonatan:Le0078_ENUM/Apple;
+   #4 = NameAndType        #5:#6          // Jonatan:Le0078_ENUM/Apple;
+   #5 = Utf8               Jonatan
+   #6 = Utf8               Le0078_ENUM/Apple;
+   #7 = Fieldref           #1.#8          // e0078_ENUM/Apple.GoldenDel:Le0078_ENUM/Apple;
+   #8 = NameAndType        #9:#6          // GoldenDel:Le0078_ENUM/Apple;
+   #9 = Utf8               GoldenDel
+  #10 = Fieldref           #1.#11         // e0078_ENUM/Apple.RedDel:Le0078_ENUM/Apple;
+  #11 = NameAndType        #12:#6         // RedDel:Le0078_ENUM/Apple;
+  #12 = Utf8               RedDel
+  #13 = Fieldref           #1.#14         // e0078_ENUM/Apple.$VALUES:[Le0078_ENUM/Apple;
+  #14 = NameAndType        #15:#16        // $VALUES:[Le0078_ENUM/Apple;
+  #15 = Utf8               $VALUES
+  #16 = Utf8               [Le0078_ENUM/Apple;
+  #17 = Methodref          #18.#19        // "[Le0078_ENUM/Apple;".clone:()Ljava/lang/Object;
+  #18 = Class              #16            // "[Le0078_ENUM/Apple;"
+  #19 = NameAndType        #20:#21        // clone:()Ljava/lang/Object;
+  #20 = Utf8               clone
+  #21 = Utf8               ()Ljava/lang/Object;
+  #22 = Methodref          #23.#24        // java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+  #23 = Class              #25            // java/lang/Enum
+  #24 = NameAndType        #26:#27        // valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+  #25 = Utf8               java/lang/Enum
+  #26 = Utf8               valueOf
+  #27 = Utf8               (Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+  #28 = Methodref          #23.#29        // java/lang/Enum."<init>":(Ljava/lang/String;I)V
+  #29 = NameAndType        #30:#31        // "<init>":(Ljava/lang/String;I)V
+  #30 = Utf8               <init>
+  #31 = Utf8               (Ljava/lang/String;I)V
+  #32 = Fieldref           #1.#33         // e0078_ENUM/Apple.price:I
+  #33 = NameAndType        #34:#35        // price:I
+  #34 = Utf8               price
+  #35 = Utf8               I
+  #36 = String             #5             // Jonatan
+  #37 = Methodref          #1.#38         // e0078_ENUM/Apple."<init>":(Ljava/lang/String;II)V
+  #38 = NameAndType        #30:#39        // "<init>":(Ljava/lang/String;II)V
+  #39 = Utf8               (Ljava/lang/String;II)V
+  #40 = String             #9             // GoldenDel
+  #41 = String             #12            // RedDel
+  #42 = Methodref          #1.#43         // e0078_ENUM/Apple.$values:()[Le0078_ENUM/Apple;
+  #43 = NameAndType        #44:#45        // $values:()[Le0078_ENUM/Apple;
+  #44 = Utf8               $values
+  #45 = Utf8               ()[Le0078_ENUM/Apple;
+  #46 = Utf8               values
+  #47 = Utf8               Code
+  #48 = Utf8               LineNumberTable
+  #49 = Utf8               (Ljava/lang/String;)Le0078_ENUM/Apple;
+  #50 = Utf8               LocalVariableTable
+  #51 = Utf8               name
+  #52 = Utf8               Ljava/lang/String;
+  #53 = Utf8               this
+  #54 = Utf8               PPP
+  #55 = Utf8               Signature
+  #56 = Utf8               (I)V
+  #57 = Utf8               getPrice
+  #58 = Utf8               ()I
+  #59 = Utf8               <clinit>
+  #60 = Utf8               ()V
+  #61 = Utf8               Ljava/lang/Enum<Le0078_ENUM/Apple;>;
+  #62 = Utf8               SourceFile
+  #63 = Utf8               Apple.java
+{
+  public static final e0078_ENUM.Apple Jonatan;
+    descriptor: Le0078_ENUM/Apple;
+    flags: (0x4019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL, ACC_ENUM
+
+  public static final e0078_ENUM.Apple GoldenDel;
+    descriptor: Le0078_ENUM/Apple;
+    flags: (0x4019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL, ACC_ENUM
+
+  public static final e0078_ENUM.Apple RedDel;
+    descriptor: Le0078_ENUM/Apple;
+    flags: (0x4019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL, ACC_ENUM
+
+  public static e0078_ENUM.Apple[] values();
+    descriptor: ()[Le0078_ENUM/Apple;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: getstatic     #13                 // Field $VALUES:[Le0078_ENUM/Apple;
+         3: invokevirtual #17                 // Method "[Le0078_ENUM/Apple;".clone:()Ljava/lang/Object;
+         6: checkcast     #18                 // class "[Le0078_ENUM/Apple;"
+         9: areturn
+      LineNumberTable:
+        line 3: 0
+
+  public static e0078_ENUM.Apple valueOf(java.lang.String);
+    descriptor: (Ljava/lang/String;)Le0078_ENUM/Apple;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: ldc           #1                  // class e0078_ENUM/Apple
+         2: aload_0
+         3: invokestatic  #22                 // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+         6: checkcast     #1                  // class e0078_ENUM/Apple
+         9: areturn
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      10     0  name   Ljava/lang/String;
+
+  int getPrice();
+    descriptor: ()I
+    flags: (0x0000)
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #32                 // Field price:I
+         4: ireturn
+      LineNumberTable:
+        line 13: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0078_ENUM/Apple;
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=5, locals=0, args_size=0
+         0: new           #1                  // class e0078_ENUM/Apple
+         3: dup
+         4: ldc           #36                 // String Jonatan
+         6: iconst_0
+         7: bipush        11
+         9: invokespecial #37                 // Method "<init>":(Ljava/lang/String;II)V
+        12: putstatic     #3                  // Field Jonatan:Le0078_ENUM/Apple;
+        
+        15: new           #1                  // class e0078_ENUM/Apple
+        18: dup
+        19: ldc           #40                 // String GoldenDel
+        21: iconst_1
+        22: bipush        12
+        24: invokespecial #37                 // Method "<init>":(Ljava/lang/String;II)V
+        27: putstatic     #7                  // Field GoldenDel:Le0078_ENUM/Apple;
+        
+        30: new           #1                  // class e0078_ENUM/Apple
+        33: dup
+        34: ldc           #41                 // String RedDel
+        36: iconst_2
+        37: bipush        13
+        39: invokespecial #37                 // Method "<init>":(Ljava/lang/String;II)V
+        42: putstatic     #10                 // Field RedDel:Le0078_ENUM/Apple;
+        45: invokestatic  #42                 // Method $values:()[Le0078_ENUM/Apple;
+        48: putstatic     #13                 // Field $VALUES:[Le0078_ENUM/Apple;
+        
+        51: return
+        
+      LineNumberTable:
+        line 4: 0
+        line 3: 45
+}
+Signature: #61                          // Ljava/lang/Enum<Le0078_ENUM/Apple;>;
+SourceFile: "Apple.java"
+#############################################################################################
+package e0078_ENUM;
+
+public enum Apple {
+    Jonatan(11), GoldenDel(12), RedDel(13);
+
+    private int price;
+
+    Apple(int PPP) {
+        price = PPP;
+    }
+
+    int getPrice() {
+        return price;
+    }
+
+}
+---------------------------------------------------------------------------------------------

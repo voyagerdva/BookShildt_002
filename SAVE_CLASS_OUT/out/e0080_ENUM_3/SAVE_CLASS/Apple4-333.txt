@@ -1,0 +1,141 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_002/out/production/BookShildt_002/e0080_ENUM_3/Apple4.class
+  Last modified 31 џэт. 2023 у.; size 633 bytes
+  SHA-256 checksum 38c26ad23d101002f5d4221d26e752ef46f8c6b3be04c16802ce2a67d2f42466
+  Compiled from "Apple4.java"
+public final class e0080_ENUM_3.Apple4
+  minor version: 0
+  major version: 61
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #8                          // e0080_ENUM_3/Apple4
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 5, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // e0080_ENUM_3/Apple4.number:I
+   #8 = Class              #10            // e0080_ENUM_3/Apple4
+   #9 = NameAndType        #11:#12        // number:I
+  #10 = Utf8               e0080_ENUM_3/Apple4
+  #11 = Utf8               number
+  #12 = Utf8               I
+  #13 = Fieldref           #8.#14         // e0080_ENUM_3/Apple4.kind:Ljava/lang/String;
+  #14 = NameAndType        #15:#16        // kind:Ljava/lang/String;
+  #15 = Utf8               kind
+  #16 = Utf8               Ljava/lang/String;
+  #17 = String             #18            // RRR1
+  #18 = Utf8               RRR1
+  #19 = Methodref          #8.#20         // e0080_ENUM_3/Apple4."<init>":(ILjava/lang/String;)V
+  #20 = NameAndType        #5:#21         // "<init>":(ILjava/lang/String;)V
+  #21 = Utf8               (ILjava/lang/String;)V
+  #22 = Fieldref           #8.#23         // e0080_ENUM_3/Apple4.RED:Le0080_ENUM_3/Apple4;
+  #23 = NameAndType        #24:#25        // RED:Le0080_ENUM_3/Apple4;
+  #24 = Utf8               RED
+  #25 = Utf8               Le0080_ENUM_3/Apple4;
+  #26 = String             #27            // GGG2
+  #27 = Utf8               GGG2
+  #28 = Fieldref           #8.#29         // e0080_ENUM_3/Apple4.GREEN:Le0080_ENUM_3/Apple4;
+  #29 = NameAndType        #30:#25        // GREEN:Le0080_ENUM_3/Apple4;
+  #30 = Utf8               GREEN
+  #31 = String             #32            // BBB3
+  #32 = Utf8               BBB3
+  #33 = Fieldref           #8.#34         // e0080_ENUM_3/Apple4.BLUE:Le0080_ENUM_3/Apple4;
+  #34 = NameAndType        #35:#25        // BLUE:Le0080_ENUM_3/Apple4;
+  #35 = Utf8               BLUE
+  #36 = Utf8               Code
+  #37 = Utf8               LineNumberTable
+  #38 = Utf8               LocalVariableTable
+  #39 = Utf8               this
+  #40 = Utf8               i
+  #41 = Utf8               s
+  #42 = Utf8               <clinit>
+  #43 = Utf8               SourceFile
+  #44 = Utf8               Apple4.java
+{
+  public static final e0080_ENUM_3.Apple4 RED;
+    descriptor: Le0080_ENUM_3/Apple4;
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public static final e0080_ENUM_3.Apple4 GREEN;
+    descriptor: Le0080_ENUM_3/Apple4;
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public static final e0080_ENUM_3.Apple4 BLUE;
+    descriptor: Le0080_ENUM_3/Apple4;
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  e0080_ENUM_3.Apple4(int, java.lang.String);
+    descriptor: (ILjava/lang/String;)V
+    flags: (0x0000)
+    Code:
+      stack=2, locals=3, args_size=3
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: iload_1
+         6: putfield      #7                  // Field number:I
+         9: aload_0
+        10: aload_2
+        11: putfield      #13                 // Field kind:Ljava/lang/String;
+        14: return
+      LineNumberTable:
+        line 11: 0
+        line 12: 4
+        line 13: 9
+        line 14: 14
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      15     0  this   Le0080_ENUM_3/Apple4;
+            0      15     1     i   I
+            0      15     2     s   Ljava/lang/String;
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=4, locals=0, args_size=0
+         0: new           #8                  // class e0080_ENUM_3/Apple4
+         3: dup
+         4: iconst_1
+         5: ldc           #17                 // String RRR1
+         7: invokespecial #19                 // Method "<init>":(ILjava/lang/String;)V
+        10: putstatic     #22                 // Field RED:Le0080_ENUM_3/Apple4;
+        13: new           #8                  // class e0080_ENUM_3/Apple4
+        16: dup
+        17: iconst_2
+        18: ldc           #26                 // String GGG2
+        20: invokespecial #19                 // Method "<init>":(ILjava/lang/String;)V
+        23: putstatic     #28                 // Field GREEN:Le0080_ENUM_3/Apple4;
+        26: new           #8                  // class e0080_ENUM_3/Apple4
+        29: dup
+        30: iconst_3
+        31: ldc           #31                 // String BBB3
+        33: invokespecial #19                 // Method "<init>":(ILjava/lang/String;)V
+        36: putstatic     #33                 // Field BLUE:Le0080_ENUM_3/Apple4;
+        39: return
+      LineNumberTable:
+        line 4: 0
+        line 5: 13
+        line 6: 26
+}
+SourceFile: "Apple4.java"
+#############################################################################################
+package e0080_ENUM_3;
+
+final public class Apple4 {
+    final public static Apple4 RED = new Apple4(1, "RRR1");
+    final public static Apple4 GREEN = new Apple4(2, "GGG2");
+    final public static Apple4 BLUE = new Apple4(3, "BBB3");
+
+    private int number;
+    private String kind;
+
+    Apple4(int i, String s) {
+        number = i;
+        kind = s;
+    }
+}
+---------------------------------------------------------------------------------------------

@@ -1,0 +1,4 @@
+/* Copying a file.
+autoclose by try with resources
+in file THIRD.txt
+*/

@@ -1,0 +1,8 @@
+/* Copying a file.
+To use this program, specify
+the names of the source and target files.
+For example, to copy a file FIRST.TXT
+to a file SECOND.TXT , type
+the following command at the command prompt:
+java CopyFile FIRST.TXT SECOND.TXT
+*/
