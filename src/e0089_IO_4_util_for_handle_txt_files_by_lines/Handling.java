@@ -33,7 +33,7 @@ public class Handling {
             rows.forEach(r -> {
                 try {
                     row = modifyRows(r);
-                    writer.write("HANDLED > " + row + "\n");
+                    writer.write(row + "\n");
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
