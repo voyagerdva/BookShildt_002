@@ -1,0 +1,451 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_002/out/production/BookShildt_002/e0070_Threads_and_socket_try_block/ServerThread7.class
+  Last modified 24 янв. 2023 г.; size 3128 bytes
+  SHA-256 checksum 585219d1dcefcdbfe762ce31f350743dad9ce651bd90d3056f7a61b12fbf1a58
+  Compiled from "ServerThread7.java"
+public class e0070_Threads_and_socket_try_block.ServerThread7 extends java.lang.Thread
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #8                          // e0070_Threads_and_socket_try_block/ServerThread7
+  super_class: #2                         // java/lang/Thread
+  interfaces: 0, fields: 3, methods: 2, attributes: 3
+Constant pool:
+    #1 = Methodref          #2.#3         // java/lang/Thread."<init>":()V
+    #2 = Class              #4            // java/lang/Thread
+    #3 = NameAndType        #5:#6         // "<init>":()V
+    #4 = Utf8               java/lang/Thread
+    #5 = Utf8               <init>
+    #6 = Utf8               ()V
+    #7 = Fieldref           #8.#9         // e0070_Threads_and_socket_try_block/ServerThread7.monitor:Le0070_Threads_and_socket_try_block/Monitor7;
+    #8 = Class              #10           // e0070_Threads_and_socket_try_block/ServerThread7
+    #9 = NameAndType        #11:#12       // monitor:Le0070_Threads_and_socket_try_block/Monitor7;
+   #10 = Utf8               e0070_Threads_and_socket_try_block/ServerThread7
+   #11 = Utf8               monitor
+   #12 = Utf8               Le0070_Threads_and_socket_try_block/Monitor7;
+   #13 = Fieldref           #8.#14        // e0070_Threads_and_socket_try_block/ServerThread7.PORT:I
+   #14 = NameAndType        #15:#16       // PORT:I
+   #15 = Utf8               PORT
+   #16 = Utf8               I
+   #17 = Fieldref           #8.#18        // e0070_Threads_and_socket_try_block/ServerThread7.name:Ljava/lang/String;
+   #18 = NameAndType        #19:#20       // name:Ljava/lang/String;
+   #19 = Utf8               name
+   #20 = Utf8               Ljava/lang/String;
+   #21 = Methodref          #8.#22        // e0070_Threads_and_socket_try_block/ServerThread7.setName:(Ljava/lang/String;)V
+   #22 = NameAndType        #23:#24       // setName:(Ljava/lang/String;)V
+   #23 = Utf8               setName
+   #24 = Utf8               (Ljava/lang/String;)V
+   #25 = Fieldref           #26.#27       // java/lang/System.out:Ljava/io/PrintStream;
+   #26 = Class              #28           // java/lang/System
+   #27 = NameAndType        #29:#30       // out:Ljava/io/PrintStream;
+   #28 = Utf8               java/lang/System
+   #29 = Utf8               out
+   #30 = Utf8               Ljava/io/PrintStream;
+   #31 = String             #32           // %s : %s : %s  was created...\n
+   #32 = Utf8               %s : %s : %s  was created...\n
+   #33 = Class              #34           // java/lang/Object
+   #34 = Utf8               java/lang/Object
+   #35 = Methodref          #8.#36        // e0070_Threads_and_socket_try_block/ServerThread7.getName:()Ljava/lang/String;
+   #36 = NameAndType        #37:#38       // getName:()Ljava/lang/String;
+   #37 = Utf8               getName
+   #38 = Utf8               ()Ljava/lang/String;
+   #39 = Methodref          #8.#40        // e0070_Threads_and_socket_try_block/ServerThread7.getPriority:()I
+   #40 = NameAndType        #41:#42       // getPriority:()I
+   #41 = Utf8               getPriority
+   #42 = Utf8               ()I
+   #43 = Methodref          #44.#45       // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+   #44 = Class              #46           // java/lang/Integer
+   #45 = NameAndType        #47:#48       // valueOf:(I)Ljava/lang/Integer;
+   #46 = Utf8               java/lang/Integer
+   #47 = Utf8               valueOf
+   #48 = Utf8               (I)Ljava/lang/Integer;
+   #49 = Methodref          #8.#50        // e0070_Threads_and_socket_try_block/ServerThread7.getState:()Ljava/lang/Thread$State;
+   #50 = NameAndType        #51:#52       // getState:()Ljava/lang/Thread$State;
+   #51 = Utf8               getState
+   #52 = Utf8               ()Ljava/lang/Thread$State;
+   #53 = Methodref          #54.#55       // java/io/PrintStream.printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+   #54 = Class              #56           // java/io/PrintStream
+   #55 = NameAndType        #57:#58       // printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+   #56 = Utf8               java/io/PrintStream
+   #57 = Utf8               printf
+   #58 = Utf8               (Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+   #59 = Class              #60           // java/net/ServerSocket
+   #60 = Utf8               java/net/ServerSocket
+   #61 = Methodref          #59.#62       // java/net/ServerSocket."<init>":(I)V
+   #62 = NameAndType        #5:#63        // "<init>":(I)V
+   #63 = Utf8               (I)V
+   #64 = String             #65           // \nThread: %s, Application: Bag, server started\n
+   #65 = Utf8               \nThread: %s, Application: Bag, server started\n
+   #66 = Long               2000l
+   #68 = Methodref          #2.#69        // java/lang/Thread.sleep:(J)V
+   #69 = NameAndType        #70:#71       // sleep:(J)V
+   #70 = Utf8               sleep
+   #71 = Utf8               (J)V
+   #72 = Methodref          #59.#73       // java/net/ServerSocket.accept:()Ljava/net/Socket;
+   #73 = NameAndType        #74:#75       // accept:()Ljava/net/Socket;
+   #74 = Utf8               accept
+   #75 = Utf8               ()Ljava/net/Socket;
+   #76 = InvokeDynamic      #0:#77        // #0:makeConcatWithConstants:(Ljava/net/Socket;)Ljava/lang/String;
+   #77 = NameAndType        #78:#79       // makeConcatWithConstants:(Ljava/net/Socket;)Ljava/lang/String;
+   #78 = Utf8               makeConcatWithConstants
+   #79 = Utf8               (Ljava/net/Socket;)Ljava/lang/String;
+   #80 = Methodref          #54.#81       // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #81 = NameAndType        #82:#24       // println:(Ljava/lang/String;)V
+   #82 = Utf8               println
+   #83 = Class              #84           // java/io/ObjectOutputStream
+   #84 = Utf8               java/io/ObjectOutputStream
+   #85 = Methodref          #86.#87       // java/net/Socket.getOutputStream:()Ljava/io/OutputStream;
+   #86 = Class              #88           // java/net/Socket
+   #87 = NameAndType        #89:#90       // getOutputStream:()Ljava/io/OutputStream;
+   #88 = Utf8               java/net/Socket
+   #89 = Utf8               getOutputStream
+   #90 = Utf8               ()Ljava/io/OutputStream;
+   #91 = Methodref          #83.#92       // java/io/ObjectOutputStream."<init>":(Ljava/io/OutputStream;)V
+   #92 = NameAndType        #5:#93        // "<init>":(Ljava/io/OutputStream;)V
+   #93 = Utf8               (Ljava/io/OutputStream;)V
+   #94 = Class              #95           // java/io/ObjectInputStream
+   #95 = Utf8               java/io/ObjectInputStream
+   #96 = Methodref          #86.#97       // java/net/Socket.getInputStream:()Ljava/io/InputStream;
+   #97 = NameAndType        #98:#99       // getInputStream:()Ljava/io/InputStream;
+   #98 = Utf8               getInputStream
+   #99 = Utf8               ()Ljava/io/InputStream;
+  #100 = Methodref          #94.#101      // java/io/ObjectInputStream."<init>":(Ljava/io/InputStream;)V
+  #101 = NameAndType        #5:#102       // "<init>":(Ljava/io/InputStream;)V
+  #102 = Utf8               (Ljava/io/InputStream;)V
+  #103 = Methodref          #86.#104      // java/net/Socket.isConnected:()Z
+  #104 = NameAndType        #105:#106     // isConnected:()Z
+  #105 = Utf8               isConnected
+  #106 = Utf8               ()Z
+  #107 = Methodref          #94.#108      // java/io/ObjectInputStream.readObject:()Ljava/lang/Object;
+  #108 = NameAndType        #109:#110     // readObject:()Ljava/lang/Object;
+  #109 = Utf8               readObject
+  #110 = Utf8               ()Ljava/lang/Object;
+  #111 = Class              #112          // e0070_Threads_and_socket_try_block/Bag7
+  #112 = Utf8               e0070_Threads_and_socket_try_block/Bag7
+  #113 = String             #114          // Получен объект %s, в нем поля: %s / %s\n
+  #114 = Utf8               Получен объект %s, в нем поля: %s / %s\n
+  #115 = Fieldref           #111.#116     // e0070_Threads_and_socket_try_block/Bag7.x:I
+  #116 = NameAndType        #117:#16      // x:I
+  #117 = Utf8               x
+  #118 = Fieldref           #111.#119     // e0070_Threads_and_socket_try_block/Bag7.y:I
+  #119 = NameAndType        #120:#16      // y:I
+  #120 = Utf8               y
+  #121 = Methodref          #94.#122      // java/io/ObjectInputStream.close:()V
+  #122 = NameAndType        #123:#6       // close:()V
+  #123 = Utf8               close
+  #124 = Methodref          #86.#122      // java/net/Socket.close:()V
+  #125 = Methodref          #59.#122      // java/net/ServerSocket.close:()V
+  #126 = Class              #127          // java/lang/Exception
+  #127 = Utf8               java/lang/Exception
+  #128 = Fieldref           #26.#129      // java/lang/System.err:Ljava/io/PrintStream;
+  #129 = NameAndType        #130:#30      // err:Ljava/io/PrintStream;
+  #130 = Utf8               err
+  #131 = String             #132          // -= EXCEPTION HANDLER =-\nBROKEN with EXCEPTION:
+  #132 = Utf8               -= EXCEPTION HANDLER =-\nBROKEN with EXCEPTION:
+  #133 = Methodref          #126.#134     // java/lang/Exception.printStackTrace:()V
+  #134 = NameAndType        #135:#6       // printStackTrace:()V
+  #135 = Utf8               printStackTrace
+  #136 = Utf8               (Ljava/lang/String;ILe0070_Threads_and_socket_try_block/Monitor7;)V
+  #137 = Utf8               Code
+  #138 = Utf8               LineNumberTable
+  #139 = Utf8               LocalVariableTable
+  #140 = Utf8               this
+  #141 = Utf8               Le0070_Threads_and_socket_try_block/ServerThread7;
+  #142 = Utf8               n
+  #143 = Utf8               port
+  #144 = Utf8               mon
+  #145 = Utf8               run
+  #146 = Utf8               bag
+  #147 = Utf8               Le0070_Threads_and_socket_try_block/Bag7;
+  #148 = Utf8               server
+  #149 = Utf8               Ljava/net/ServerSocket;
+  #150 = Utf8               socket
+  #151 = Utf8               Ljava/net/Socket;
+  #152 = Utf8               oos
+  #153 = Utf8               Ljava/io/ObjectOutputStream;
+  #154 = Utf8               ois
+  #155 = Utf8               Ljava/io/ObjectInputStream;
+  #156 = Utf8               e
+  #157 = Utf8               Ljava/lang/Exception;
+  #158 = Utf8               StackMapTable
+  #159 = Utf8               SourceFile
+  #160 = Utf8               ServerThread7.java
+  #161 = Utf8               BootstrapMethods
+  #162 = MethodHandle       6:#163        // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #163 = Methodref          #164.#165     // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #164 = Class              #166          // java/lang/invoke/StringConcatFactory
+  #165 = NameAndType        #78:#167      // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #166 = Utf8               java/lang/invoke/StringConcatFactory
+  #167 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #168 = String             #169          // Connection accepted: \u0001
+  #169 = Utf8               Connection accepted: \u0001
+  #170 = Utf8               InnerClasses
+  #171 = Class              #172          // java/lang/Thread$State
+  #172 = Utf8               java/lang/Thread$State
+  #173 = Utf8               State
+  #174 = Class              #175          // java/lang/invoke/MethodHandles$Lookup
+  #175 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #176 = Class              #177          // java/lang/invoke/MethodHandles
+  #177 = Utf8               java/lang/invoke/MethodHandles
+  #178 = Utf8               Lookup
+{
+  e0070_Threads_and_socket_try_block.Monitor7 monitor;
+    descriptor: Le0070_Threads_and_socket_try_block/Monitor7;
+    flags: (0x0000)
+
+  java.lang.String name;
+    descriptor: Ljava/lang/String;
+    flags: (0x0000)
+
+  int PORT;
+    descriptor: I
+    flags: (0x0000)
+
+  e0070_Threads_and_socket_try_block.ServerThread7(java.lang.String, int, e0070_Threads_and_socket_try_block.Monitor7);
+    descriptor: (Ljava/lang/String;ILe0070_Threads_and_socket_try_block/Monitor7;)V
+    flags: (0x0000)
+    Code:
+      stack=6, locals=4, args_size=4
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Thread."<init>":()V
+         4: aload_0
+         5: aload_3
+         6: putfield      #7                  // Field monitor:Le0070_Threads_and_socket_try_block/Monitor7;
+         9: aload_0
+        10: iload_2
+        11: putfield      #13                 // Field PORT:I
+        14: aload_0
+        15: aload_1
+        16: putfield      #17                 // Field name:Ljava/lang/String;
+        19: aload_0
+        20: aload_0
+        21: getfield      #17                 // Field name:Ljava/lang/String;
+        24: invokevirtual #21                 // Method setName:(Ljava/lang/String;)V
+        27: getstatic     #25                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        30: ldc           #31                 // String %s : %s : %s  was created...\n
+        32: iconst_3
+        33: anewarray     #33                 // class java/lang/Object
+        36: dup
+        37: iconst_0
+        38: aload_0
+        39: invokevirtual #35                 // Method getName:()Ljava/lang/String;
+        42: aastore
+        43: dup
+        44: iconst_1
+        45: aload_0
+        46: invokevirtual #39                 // Method getPriority:()I
+        49: invokestatic  #43                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        52: aastore
+        53: dup
+        54: iconst_2
+        55: aload_0
+        56: invokevirtual #49                 // Method getState:()Ljava/lang/Thread$State;
+        59: aastore
+        60: invokevirtual #53                 // Method java/io/PrintStream.printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+        63: pop
+        64: return
+      LineNumberTable:
+        line 13: 0
+        line 14: 4
+        line 15: 9
+        line 16: 14
+        line 17: 19
+        line 18: 27
+        line 19: 64
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      65     0  this   Le0070_Threads_and_socket_try_block/ServerThread7;
+            0      65     1     n   Ljava/lang/String;
+            0      65     2  port   I
+            0      65     3   mon   Le0070_Threads_and_socket_try_block/Monitor7;
+
+  public void run();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=6, locals=6, args_size=1
+         0: new           #59                 // class java/net/ServerSocket
+         3: dup
+         4: aload_0
+         5: getfield      #13                 // Field PORT:I
+         8: invokespecial #61                 // Method java/net/ServerSocket."<init>":(I)V
+        11: astore_1
+        12: getstatic     #25                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        15: ldc           #64                 // String \nThread: %s, Application: Bag, server started\n
+        17: iconst_1
+        18: anewarray     #33                 // class java/lang/Object
+        21: dup
+        22: iconst_0
+        23: aload_0
+        24: getfield      #17                 // Field name:Ljava/lang/String;
+        27: aastore
+        28: invokevirtual #53                 // Method java/io/PrintStream.printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+        31: pop
+        32: ldc2_w        #66                 // long 2000l
+        35: invokestatic  #68                 // Method java/lang/Thread.sleep:(J)V
+        38: aload_1
+        39: invokevirtual #72                 // Method java/net/ServerSocket.accept:()Ljava/net/Socket;
+        42: astore_2
+        43: getstatic     #25                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        46: aload_2
+        47: invokedynamic #76,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/net/Socket;)Ljava/lang/String;
+        52: invokevirtual #80                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        55: new           #83                 // class java/io/ObjectOutputStream
+        58: dup
+        59: aload_2
+        60: invokevirtual #85                 // Method java/net/Socket.getOutputStream:()Ljava/io/OutputStream;
+        63: invokespecial #91                 // Method java/io/ObjectOutputStream."<init>":(Ljava/io/OutputStream;)V
+        66: astore_3
+        67: new           #94                 // class java/io/ObjectInputStream
+        70: dup
+        71: aload_2
+        72: invokevirtual #96                 // Method java/net/Socket.getInputStream:()Ljava/io/InputStream;
+        75: invokespecial #100                // Method java/io/ObjectInputStream."<init>":(Ljava/io/InputStream;)V
+        78: astore        4
+        80: aload_2
+        81: invokevirtual #103                // Method java/net/Socket.isConnected:()Z
+        84: ifeq          140
+        87: aload         4
+        89: invokevirtual #107                // Method java/io/ObjectInputStream.readObject:()Ljava/lang/Object;
+        92: checkcast     #111                // class e0070_Threads_and_socket_try_block/Bag7
+        95: astore        5
+        97: getstatic     #25                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       100: ldc           #113                // String Получен объект %s, в нем поля: %s / %s\n
+       102: iconst_3
+       103: anewarray     #33                 // class java/lang/Object
+       106: dup
+       107: iconst_0
+       108: aload         5
+       110: aastore
+       111: dup
+       112: iconst_1
+       113: aload         5
+       115: getfield      #115                // Field e0070_Threads_and_socket_try_block/Bag7.x:I
+       118: invokestatic  #43                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       121: aastore
+       122: dup
+       123: iconst_2
+       124: aload         5
+       126: getfield      #118                // Field e0070_Threads_and_socket_try_block/Bag7.y:I
+       129: invokestatic  #43                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       132: aastore
+       133: invokevirtual #53                 // Method java/io/PrintStream.printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+       136: pop
+       137: goto          80
+       140: aload         4
+       142: invokevirtual #121                // Method java/io/ObjectInputStream.close:()V
+       145: aload_2
+       146: invokevirtual #124                // Method java/net/Socket.close:()V
+       149: aload_1
+       150: invokevirtual #125                // Method java/net/ServerSocket.close:()V
+       153: goto          169
+       156: astore_1
+       157: getstatic     #128                // Field java/lang/System.err:Ljava/io/PrintStream;
+       160: ldc           #131                // String -= EXCEPTION HANDLER =-\nBROKEN with EXCEPTION:
+       162: invokevirtual #80                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       165: aload_1
+       166: invokevirtual #133                // Method java/lang/Exception.printStackTrace:()V
+       169: return
+      Exception table:
+         from    to  target type
+             0   153   156   Class java/lang/Exception
+      LineNumberTable:
+        line 25: 0
+        line 26: 12
+        line 28: 32
+        line 30: 38
+        line 32: 43
+        line 34: 55
+        line 35: 67
+        line 37: 80
+        line 38: 87
+        line 39: 97
+        line 40: 137
+        line 42: 140
+        line 43: 145
+        line 44: 149
+        line 48: 153
+        line 45: 156
+        line 46: 157
+        line 47: 165
+        line 49: 169
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           97      40     5   bag   Le0070_Threads_and_socket_try_block/Bag7;
+           12     141     1 server   Ljava/net/ServerSocket;
+           43     110     2 socket   Ljava/net/Socket;
+           67      86     3   oos   Ljava/io/ObjectOutputStream;
+           80      73     4   ois   Ljava/io/ObjectInputStream;
+          157      12     1     e   Ljava/lang/Exception;
+            0     170     0  this   Le0070_Threads_and_socket_try_block/ServerThread7;
+      StackMapTable: number_of_entries = 4
+        frame_type = 255 /* full_frame */
+          offset_delta = 80
+          locals = [ class e0070_Threads_and_socket_try_block/ServerThread7, class java/net/ServerSocket, class java/net/Socket, class java/io/ObjectOutputStream, class java/io/ObjectInputStream ]
+          stack = []
+        frame_type = 59 /* same */
+        frame_type = 255 /* full_frame */
+          offset_delta = 15
+          locals = [ class e0070_Threads_and_socket_try_block/ServerThread7 ]
+          stack = [ class java/lang/Exception ]
+        frame_type = 12 /* same */
+}
+SourceFile: "ServerThread7.java"
+BootstrapMethods:
+  0: #162 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #168 Connection accepted: \u0001
+InnerClasses:
+  public static final #173= #171 of #2;   // State=class java/lang/Thread$State of class java/lang/Thread
+  public static final #178= #174 of #176; // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+#############################################################################################
+package e0070_Threads_and_socket_try_block;
+
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class ServerThread7 extends Thread {
+    Monitor7 monitor;
+    String name;
+    int PORT;
+
+    ServerThread7(String n, int port, Monitor7 mon) {
+        monitor = mon;
+        PORT = port;
+        name = n;
+        setName(name);
+        System.out.printf("%s : %s : %s  was created...\n", getName(), getPriority(), getState());
+    }
+
+    @Override
+    public void run() {
+
+        try {
+            ServerSocket server = new ServerSocket(PORT);
+            System.out.printf("\nThread: %s, Application: Bag, server started\n", name);
+
+            Thread.sleep(2000);
+
+            Socket socket = server.accept();
+
+            System.out.println("Connection accepted: " + socket);
+
+            ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
+            ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
+
+            while (socket.isConnected()) {
+                Bag7 bag = (Bag7) ois.readObject();
+                System.out.printf("РџРѕР»СѓС‡РµРЅ РѕР±СЉРµРєС‚ %s, РІ РЅРµРј РїРѕР»СЏ: %s / %s\n", bag, bag.x, bag.y);
+            }
+
+            ois.close();
+            socket.close();
+            server.close();
+        } catch (Exception e) {
+            System.err.println("-= EXCEPTION HANDLER =-\nBROKEN with EXCEPTION:");
+            e.printStackTrace();
+        }
+    }
+}
+---------------------------------------------------------------------------------------------

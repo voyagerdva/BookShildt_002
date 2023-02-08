@@ -1,0 +1,483 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_002/out/production/BookShildt_002/e0066_Threads_myThreads_and_socket/Th1.class
+  Last modified 19 янв. 2023 г.; size 3091 bytes
+  SHA-256 checksum 8be212f49500363fa2b4f772f86903da5f1b92617d231194b20c71ba24c81a9e
+  Compiled from "Th1.java"
+public class e0066_Threads_myThreads_and_socket.Th1 implements java.lang.Runnable
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #8                          // e0066_Threads_myThreads_and_socket/Th1
+  super_class: #2                         // java/lang/Object
+  interfaces: 1, fields: 6, methods: 3, attributes: 3
+Constant pool:
+    #1 = Methodref          #2.#3         // java/lang/Object."<init>":()V
+    #2 = Class              #4            // java/lang/Object
+    #3 = NameAndType        #5:#6         // "<init>":()V
+    #4 = Utf8               java/lang/Object
+    #5 = Utf8               <init>
+    #6 = Utf8               ()V
+    #7 = Fieldref           #8.#9         // e0066_Threads_myThreads_and_socket/Th1.suspend:Z
+    #8 = Class              #10           // e0066_Threads_myThreads_and_socket/Th1
+    #9 = NameAndType        #11:#12       // suspend:Z
+   #10 = Utf8               e0066_Threads_myThreads_and_socket/Th1
+   #11 = Utf8               suspend
+   #12 = Utf8               Z
+   #13 = Fieldref           #8.#14        // e0066_Threads_myThreads_and_socket/Th1.PORT:I
+   #14 = NameAndType        #15:#16       // PORT:I
+   #15 = Utf8               PORT
+   #16 = Utf8               I
+   #17 = Fieldref           #8.#18        // e0066_Threads_myThreads_and_socket/Th1.name:Ljava/lang/String;
+   #18 = NameAndType        #19:#20       // name:Ljava/lang/String;
+   #19 = Utf8               name
+   #20 = Utf8               Ljava/lang/String;
+   #21 = Class              #22           // java/lang/Thread
+   #22 = Utf8               java/lang/Thread
+   #23 = Methodref          #21.#24       // java/lang/Thread."<init>":(Ljava/lang/Runnable;Ljava/lang/String;)V
+   #24 = NameAndType        #5:#25        // "<init>":(Ljava/lang/Runnable;Ljava/lang/String;)V
+   #25 = Utf8               (Ljava/lang/Runnable;Ljava/lang/String;)V
+   #26 = Fieldref           #8.#27        // e0066_Threads_myThreads_and_socket/Th1.t:Ljava/lang/Thread;
+   #27 = NameAndType        #28:#29       // t:Ljava/lang/Thread;
+   #28 = Utf8               t
+   #29 = Utf8               Ljava/lang/Thread;
+   #30 = Fieldref           #31.#32       // java/lang/System.out:Ljava/io/PrintStream;
+   #31 = Class              #33           // java/lang/System
+   #32 = NameAndType        #34:#35       // out:Ljava/io/PrintStream;
+   #33 = Utf8               java/lang/System
+   #34 = Utf8               out
+   #35 = Utf8               Ljava/io/PrintStream;
+   #36 = String             #37           // New thread %s created.\n
+   #37 = Utf8               New thread %s created.\n
+   #38 = Methodref          #39.#40       // java/io/PrintStream.printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+   #39 = Class              #41           // java/io/PrintStream
+   #40 = NameAndType        #42:#43       // printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+   #41 = Utf8               java/io/PrintStream
+   #42 = Utf8               printf
+   #43 = Utf8               (Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+   #44 = Methodref          #8.#45        // e0066_Threads_myThreads_and_socket/Th1."<init>":(Ljava/lang/String;I)V
+   #45 = NameAndType        #5:#46        // "<init>":(Ljava/lang/String;I)V
+   #46 = Utf8               (Ljava/lang/String;I)V
+   #47 = Methodref          #21.#48       // java/lang/Thread.start:()V
+   #48 = NameAndType        #49:#6        // start:()V
+   #49 = Utf8               start
+   #50 = Class              #51           // java/net/ServerSocket
+   #51 = Utf8               java/net/ServerSocket
+   #52 = Methodref          #50.#53       // java/net/ServerSocket."<init>":(I)V
+   #53 = NameAndType        #5:#54        // "<init>":(I)V
+   #54 = Utf8               (I)V
+   #55 = String             #56           // Thread: %s, Application: Bag, server started\n
+   #56 = Utf8               Thread: %s, Application: Bag, server started\n
+   #57 = Methodref          #50.#58       // java/net/ServerSocket.accept:()Ljava/net/Socket;
+   #58 = NameAndType        #59:#60       // accept:()Ljava/net/Socket;
+   #59 = Utf8               accept
+   #60 = Utf8               ()Ljava/net/Socket;
+   #61 = InvokeDynamic      #0:#62        // #0:makeConcatWithConstants:(Ljava/net/Socket;)Ljava/lang/String;
+   #62 = NameAndType        #63:#64       // makeConcatWithConstants:(Ljava/net/Socket;)Ljava/lang/String;
+   #63 = Utf8               makeConcatWithConstants
+   #64 = Utf8               (Ljava/net/Socket;)Ljava/lang/String;
+   #65 = Methodref          #39.#66       // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #66 = NameAndType        #67:#68       // println:(Ljava/lang/String;)V
+   #67 = Utf8               println
+   #68 = Utf8               (Ljava/lang/String;)V
+   #69 = Class              #70           // java/io/ObjectOutputStream
+   #70 = Utf8               java/io/ObjectOutputStream
+   #71 = Methodref          #72.#73       // java/net/Socket.getOutputStream:()Ljava/io/OutputStream;
+   #72 = Class              #74           // java/net/Socket
+   #73 = NameAndType        #75:#76       // getOutputStream:()Ljava/io/OutputStream;
+   #74 = Utf8               java/net/Socket
+   #75 = Utf8               getOutputStream
+   #76 = Utf8               ()Ljava/io/OutputStream;
+   #77 = Methodref          #69.#78       // java/io/ObjectOutputStream."<init>":(Ljava/io/OutputStream;)V
+   #78 = NameAndType        #5:#79        // "<init>":(Ljava/io/OutputStream;)V
+   #79 = Utf8               (Ljava/io/OutputStream;)V
+   #80 = Fieldref           #8.#81        // e0066_Threads_myThreads_and_socket/Th1.oos:Ljava/io/ObjectOutputStream;
+   #81 = NameAndType        #82:#83       // oos:Ljava/io/ObjectOutputStream;
+   #82 = Utf8               oos
+   #83 = Utf8               Ljava/io/ObjectOutputStream;
+   #84 = Class              #85           // java/io/ObjectInputStream
+   #85 = Utf8               java/io/ObjectInputStream
+   #86 = Methodref          #72.#87       // java/net/Socket.getInputStream:()Ljava/io/InputStream;
+   #87 = NameAndType        #88:#89       // getInputStream:()Ljava/io/InputStream;
+   #88 = Utf8               getInputStream
+   #89 = Utf8               ()Ljava/io/InputStream;
+   #90 = Methodref          #84.#91       // java/io/ObjectInputStream."<init>":(Ljava/io/InputStream;)V
+   #91 = NameAndType        #5:#92        // "<init>":(Ljava/io/InputStream;)V
+   #92 = Utf8               (Ljava/io/InputStream;)V
+   #93 = Fieldref           #8.#94        // e0066_Threads_myThreads_and_socket/Th1.ois:Ljava/io/ObjectInputStream;
+   #94 = NameAndType        #95:#96       // ois:Ljava/io/ObjectInputStream;
+   #95 = Utf8               ois
+   #96 = Utf8               Ljava/io/ObjectInputStream;
+   #97 = Methodref          #72.#98       // java/net/Socket.isConnected:()Z
+   #98 = NameAndType        #99:#100      // isConnected:()Z
+   #99 = Utf8               isConnected
+  #100 = Utf8               ()Z
+  #101 = Methodref          #84.#102      // java/io/ObjectInputStream.readObject:()Ljava/lang/Object;
+  #102 = NameAndType        #103:#104     // readObject:()Ljava/lang/Object;
+  #103 = Utf8               readObject
+  #104 = Utf8               ()Ljava/lang/Object;
+  #105 = Class              #106          // e0066_Threads_myThreads_and_socket/Bag
+  #106 = Utf8               e0066_Threads_myThreads_and_socket/Bag
+  #107 = String             #108          // Получен объект %s, в нем поля: %s / %s\n
+  #108 = Utf8               Получен объект %s, в нем поля: %s / %s\n
+  #109 = Fieldref           #105.#110     // e0066_Threads_myThreads_and_socket/Bag.x:I
+  #110 = NameAndType        #111:#16      // x:I
+  #111 = Utf8               x
+  #112 = Methodref          #113.#114     // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+  #113 = Class              #115          // java/lang/Integer
+  #114 = NameAndType        #116:#117     // valueOf:(I)Ljava/lang/Integer;
+  #115 = Utf8               java/lang/Integer
+  #116 = Utf8               valueOf
+  #117 = Utf8               (I)Ljava/lang/Integer;
+  #118 = Fieldref           #105.#119     // e0066_Threads_myThreads_and_socket/Bag.y:I
+  #119 = NameAndType        #120:#16      // y:I
+  #120 = Utf8               y
+  #121 = Methodref          #84.#122      // java/io/ObjectInputStream.close:()V
+  #122 = NameAndType        #123:#6       // close:()V
+  #123 = Utf8               close
+  #124 = Methodref          #72.#122      // java/net/Socket.close:()V
+  #125 = Methodref          #50.#122      // java/net/ServerSocket.close:()V
+  #126 = Class              #127          // java/lang/Exception
+  #127 = Utf8               java/lang/Exception
+  #128 = Fieldref           #31.#129      // java/lang/System.err:Ljava/io/PrintStream;
+  #129 = NameAndType        #130:#35      // err:Ljava/io/PrintStream;
+  #130 = Utf8               err
+  #131 = String             #132          // -= EXCEPTION HANDLER =-\nBROKEN with EXCEPTION:
+  #132 = Utf8               -= EXCEPTION HANDLER =-\nBROKEN with EXCEPTION:
+  #133 = Methodref          #126.#134     // java/lang/Exception.printStackTrace:()V
+  #134 = NameAndType        #135:#6       // printStackTrace:()V
+  #135 = Utf8               printStackTrace
+  #136 = Class              #137          // java/lang/Runnable
+  #137 = Utf8               java/lang/Runnable
+  #138 = Utf8               Code
+  #139 = Utf8               LineNumberTable
+  #140 = Utf8               LocalVariableTable
+  #141 = Utf8               this
+  #142 = Utf8               Le0066_Threads_myThreads_and_socket/Th1;
+  #143 = Utf8               n
+  #144 = Utf8               port
+  #145 = Utf8               createAndStart
+  #146 = Utf8               (Ljava/lang/String;I)Le0066_Threads_myThreads_and_socket/Th1;
+  #147 = Utf8               th
+  #148 = Utf8               run
+  #149 = Utf8               bag
+  #150 = Utf8               Le0066_Threads_myThreads_and_socket/Bag;
+  #151 = Utf8               server
+  #152 = Utf8               Ljava/net/ServerSocket;
+  #153 = Utf8               socket
+  #154 = Utf8               Ljava/net/Socket;
+  #155 = Utf8               e
+  #156 = Utf8               Ljava/lang/Exception;
+  #157 = Utf8               StackMapTable
+  #158 = Utf8               SourceFile
+  #159 = Utf8               Th1.java
+  #160 = Utf8               BootstrapMethods
+  #161 = MethodHandle       6:#162        // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #162 = Methodref          #163.#164     // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #163 = Class              #165          // java/lang/invoke/StringConcatFactory
+  #164 = NameAndType        #63:#166      // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #165 = Utf8               java/lang/invoke/StringConcatFactory
+  #166 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #167 = String             #168          // Connection accepted: \u0001
+  #168 = Utf8               Connection accepted: \u0001
+  #169 = Utf8               InnerClasses
+  #170 = Class              #171          // java/lang/invoke/MethodHandles$Lookup
+  #171 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #172 = Class              #173          // java/lang/invoke/MethodHandles
+  #173 = Utf8               java/lang/invoke/MethodHandles
+  #174 = Utf8               Lookup
+{
+  java.lang.String name;
+    descriptor: Ljava/lang/String;
+    flags: (0x0000)
+
+  java.lang.Thread t;
+    descriptor: Ljava/lang/Thread;
+    flags: (0x0000)
+
+  int PORT;
+    descriptor: I
+    flags: (0x0000)
+
+  boolean suspend;
+    descriptor: Z
+    flags: (0x0000)
+
+  java.io.ObjectInputStream ois;
+    descriptor: Ljava/io/ObjectInputStream;
+    flags: (0x0000)
+
+  java.io.ObjectOutputStream oos;
+    descriptor: Ljava/io/ObjectOutputStream;
+    flags: (0x0000)
+
+  e0066_Threads_myThreads_and_socket.Th1(java.lang.String, int);
+    descriptor: (Ljava/lang/String;I)V
+    flags: (0x0000)
+    Code:
+      stack=6, locals=3, args_size=3
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: iconst_0
+         6: putfield      #7                  // Field suspend:Z
+         9: aload_0
+        10: iload_2
+        11: putfield      #13                 // Field PORT:I
+        14: aload_0
+        15: aload_1
+        16: putfield      #17                 // Field name:Ljava/lang/String;
+        19: aload_0
+        20: new           #21                 // class java/lang/Thread
+        23: dup
+        24: aload_0
+        25: aload_0
+        26: getfield      #17                 // Field name:Ljava/lang/String;
+        29: invokespecial #23                 // Method java/lang/Thread."<init>":(Ljava/lang/Runnable;Ljava/lang/String;)V
+        32: putfield      #26                 // Field t:Ljava/lang/Thread;
+        35: getstatic     #30                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        38: ldc           #36                 // String New thread %s created.\n
+        40: iconst_1
+        41: anewarray     #2                  // class java/lang/Object
+        44: dup
+        45: iconst_0
+        46: aload_0
+        47: getfield      #17                 // Field name:Ljava/lang/String;
+        50: aastore
+        51: invokevirtual #38                 // Method java/io/PrintStream.printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+        54: pop
+        55: return
+      LineNumberTable:
+        line 19: 0
+        line 13: 4
+        line 20: 9
+        line 21: 14
+        line 22: 19
+        line 23: 35
+        line 24: 55
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      56     0  this   Le0066_Threads_myThreads_and_socket/Th1;
+            0      56     1     n   Ljava/lang/String;
+            0      56     2  port   I
+
+  public static e0066_Threads_myThreads_and_socket.Th1 createAndStart(java.lang.String, int);
+    descriptor: (Ljava/lang/String;I)Le0066_Threads_myThreads_and_socket/Th1;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=3, args_size=2
+         0: new           #8                  // class e0066_Threads_myThreads_and_socket/Th1
+         3: dup
+         4: aload_0
+         5: iload_1
+         6: invokespecial #44                 // Method "<init>":(Ljava/lang/String;I)V
+         9: astore_2
+        10: aload_2
+        11: getfield      #26                 // Field t:Ljava/lang/Thread;
+        14: invokevirtual #47                 // Method java/lang/Thread.start:()V
+        17: aload_2
+        18: areturn
+      LineNumberTable:
+        line 27: 0
+        line 28: 10
+        line 29: 17
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      19     0  name   Ljava/lang/String;
+            0      19     1  port   I
+           10       9     2    th   Le0066_Threads_myThreads_and_socket/Th1;
+
+  public void run();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=6, locals=4, args_size=1
+         0: new           #50                 // class java/net/ServerSocket
+         3: dup
+         4: sipush        3004
+         7: invokespecial #52                 // Method java/net/ServerSocket."<init>":(I)V
+        10: astore_1
+        11: getstatic     #30                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        14: ldc           #55                 // String Thread: %s, Application: Bag, server started\n
+        16: iconst_1
+        17: anewarray     #2                  // class java/lang/Object
+        20: dup
+        21: iconst_0
+        22: aload_0
+        23: getfield      #17                 // Field name:Ljava/lang/String;
+        26: aastore
+        27: invokevirtual #38                 // Method java/io/PrintStream.printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+        30: pop
+        31: aload_1
+        32: invokevirtual #57                 // Method java/net/ServerSocket.accept:()Ljava/net/Socket;
+        35: astore_2
+        36: getstatic     #30                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        39: aload_2
+        40: invokedynamic #61,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/net/Socket;)Ljava/lang/String;
+        45: invokevirtual #65                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        48: aload_0
+        49: new           #69                 // class java/io/ObjectOutputStream
+        52: dup
+        53: aload_2
+        54: invokevirtual #71                 // Method java/net/Socket.getOutputStream:()Ljava/io/OutputStream;
+        57: invokespecial #77                 // Method java/io/ObjectOutputStream."<init>":(Ljava/io/OutputStream;)V
+        60: putfield      #80                 // Field oos:Ljava/io/ObjectOutputStream;
+        63: aload_0
+        64: new           #84                 // class java/io/ObjectInputStream
+        67: dup
+        68: aload_2
+        69: invokevirtual #86                 // Method java/net/Socket.getInputStream:()Ljava/io/InputStream;
+        72: invokespecial #90                 // Method java/io/ObjectInputStream."<init>":(Ljava/io/InputStream;)V
+        75: putfield      #93                 // Field ois:Ljava/io/ObjectInputStream;
+        78: aload_2
+        79: invokevirtual #97                 // Method java/net/Socket.isConnected:()Z
+        82: ifeq          136
+        85: aload_0
+        86: getfield      #93                 // Field ois:Ljava/io/ObjectInputStream;
+        89: invokevirtual #101                // Method java/io/ObjectInputStream.readObject:()Ljava/lang/Object;
+        92: checkcast     #105                // class e0066_Threads_myThreads_and_socket/Bag
+        95: astore_3
+        96: getstatic     #30                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        99: ldc           #107                // String Получен объект %s, в нем поля: %s / %s\n
+       101: iconst_3
+       102: anewarray     #2                  // class java/lang/Object
+       105: dup
+       106: iconst_0
+       107: aload_3
+       108: aastore
+       109: dup
+       110: iconst_1
+       111: aload_3
+       112: getfield      #109                // Field e0066_Threads_myThreads_and_socket/Bag.x:I
+       115: invokestatic  #112                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       118: aastore
+       119: dup
+       120: iconst_2
+       121: aload_3
+       122: getfield      #118                // Field e0066_Threads_myThreads_and_socket/Bag.y:I
+       125: invokestatic  #112                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       128: aastore
+       129: invokevirtual #38                 // Method java/io/PrintStream.printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+       132: pop
+       133: goto          78
+       136: aload_0
+       137: getfield      #93                 // Field ois:Ljava/io/ObjectInputStream;
+       140: invokevirtual #121                // Method java/io/ObjectInputStream.close:()V
+       143: aload_2
+       144: invokevirtual #124                // Method java/net/Socket.close:()V
+       147: aload_1
+       148: invokevirtual #125                // Method java/net/ServerSocket.close:()V
+       151: goto          167
+       154: astore_1
+       155: getstatic     #128                // Field java/lang/System.err:Ljava/io/PrintStream;
+       158: ldc           #131                // String -= EXCEPTION HANDLER =-\nBROKEN with EXCEPTION:
+       160: invokevirtual #65                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       163: aload_1
+       164: invokevirtual #133                // Method java/lang/Exception.printStackTrace:()V
+       167: return
+      Exception table:
+         from    to  target type
+             0   151   154   Class java/lang/Exception
+      LineNumberTable:
+        line 36: 0
+        line 37: 11
+        line 39: 31
+        line 41: 36
+        line 43: 48
+        line 44: 63
+        line 46: 78
+        line 47: 85
+        line 48: 96
+        line 49: 133
+        line 51: 136
+        line 52: 143
+        line 53: 147
+        line 57: 151
+        line 54: 154
+        line 55: 155
+        line 56: 163
+        line 58: 167
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           96      37     3   bag   Le0066_Threads_myThreads_and_socket/Bag;
+           11     140     1 server   Ljava/net/ServerSocket;
+           36     115     2 socket   Ljava/net/Socket;
+          155      12     1     e   Ljava/lang/Exception;
+            0     168     0  this   Le0066_Threads_myThreads_and_socket/Th1;
+      StackMapTable: number_of_entries = 4
+        frame_type = 253 /* append */
+          offset_delta = 78
+          locals = [ class java/net/ServerSocket, class java/net/Socket ]
+        frame_type = 57 /* same */
+        frame_type = 255 /* full_frame */
+          offset_delta = 17
+          locals = [ class e0066_Threads_myThreads_and_socket/Th1 ]
+          stack = [ class java/lang/Exception ]
+        frame_type = 12 /* same */
+}
+SourceFile: "Th1.java"
+BootstrapMethods:
+  0: #161 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #167 Connection accepted: \u0001
+InnerClasses:
+  public static final #174= #170 of #172; // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+#############################################################################################
+package e0066_Threads_myThreads_and_socket;
+
+import org.w3c.dom.ls.LSOutput;
+
+import java.io.*;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class Th1 implements Runnable {
+    String name;
+    Thread t;
+    int PORT;
+    boolean suspend = false;
+
+    ObjectInputStream ois;
+    ObjectOutputStream oos;
+
+
+    Th1(String n, int port) {
+        PORT = port;
+        name = n;
+        t = new Thread(this, name);
+        System.out.printf("New thread %s created.\n", name);
+    }
+
+    public static Th1 createAndStart(String name, int port) {
+        Th1 th = new Th1(name, port);
+        th.t.start();
+        return th;
+    }
+
+    @Override
+    public void run() {
+
+        try {
+            ServerSocket server = new ServerSocket(3004);
+            System.out.printf("Thread: %s, Application: Bag, server started\n", name);
+
+            Socket socket = server.accept();
+
+            System.out.println("Connection accepted: " + socket);
+
+            oos = new ObjectOutputStream(socket.getOutputStream());
+            ois = new ObjectInputStream(socket.getInputStream());
+
+            while (socket.isConnected()) {
+                Bag bag = (Bag) ois.readObject();
+                System.out.printf("РџРѕР»СѓС‡РµРЅ РѕР±СЉРµРєС‚ %s, РІ РЅРµРј РїРѕР»СЏ: %s / %s\n", bag, bag.x, bag.y);
+            }
+
+            ois.close();
+            socket.close();
+            server.close();
+        } catch (Exception e) {
+            System.err.println("-= EXCEPTION HANDLER =-\nBROKEN with EXCEPTION:");
+            e.printStackTrace();
+        }
+    }
+}
+---------------------------------------------------------------------------------------------

@@ -1,0 +1,328 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_002/out/production/BookShildt_002/e0088_IO_Try_with_resources/ShowFile.class
+  Last modified 6 февр. 2023 г.; size 1841 bytes
+  SHA-256 checksum 5981b50f2de10938298a73b25c4bdf02cccaee13c4eac712e520c669e615f962
+  Compiled from "ShowFile.java"
+public class e0088_IO_Try_with_resources.ShowFile
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #62                         // e0088_IO_Try_with_resources/ShowFile
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = String             #8             // ./__SOURCE__/THIRD.txt
+   #8 = Utf8               ./__SOURCE__/THIRD.txt
+   #9 = String             #10            // ./__SOURCE__/THIRD_COPY.txt
+  #10 = Utf8               ./__SOURCE__/THIRD_COPY.txt
+  #11 = Fieldref           #12.#13        // java/lang/System.out:Ljava/io/PrintStream;
+  #12 = Class              #14            // java/lang/System
+  #13 = NameAndType        #15:#16        // out:Ljava/io/PrintStream;
+  #14 = Utf8               java/lang/System
+  #15 = Utf8               out
+  #16 = Utf8               Ljava/io/PrintStream;
+  #17 = String             #18            // USING: CopyFile from where...
+  #18 = Utf8               USING: CopyFile from where...
+  #19 = Methodref          #20.#21        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #20 = Class              #22            // java/io/PrintStream
+  #21 = NameAndType        #23:#24        // println:(Ljava/lang/String;)V
+  #22 = Utf8               java/io/PrintStream
+  #23 = Utf8               println
+  #24 = Utf8               (Ljava/lang/String;)V
+  #25 = Class              #26            // java/io/FileInputStream
+  #26 = Utf8               java/io/FileInputStream
+  #27 = Methodref          #25.#28        // java/io/FileInputStream."<init>":(Ljava/lang/String;)V
+  #28 = NameAndType        #5:#24         // "<init>":(Ljava/lang/String;)V
+  #29 = Class              #30            // java/io/FileOutputStream
+  #30 = Utf8               java/io/FileOutputStream
+  #31 = Methodref          #29.#28        // java/io/FileOutputStream."<init>":(Ljava/lang/String;)V
+  #32 = Methodref          #25.#33        // java/io/FileInputStream.read:()I
+  #33 = NameAndType        #34:#35        // read:()I
+  #34 = Utf8               read
+  #35 = Utf8               ()I
+  #36 = Methodref          #20.#37        // java/io/PrintStream.print:(C)V
+  #37 = NameAndType        #38:#39        // print:(C)V
+  #38 = Utf8               print
+  #39 = Utf8               (C)V
+  #40 = Methodref          #29.#41        // java/io/FileOutputStream.write:(I)V
+  #41 = NameAndType        #42:#43        // write:(I)V
+  #42 = Utf8               write
+  #43 = Utf8               (I)V
+  #44 = Methodref          #29.#45        // java/io/FileOutputStream.close:()V
+  #45 = NameAndType        #46:#6         // close:()V
+  #46 = Utf8               close
+  #47 = Class              #48            // java/lang/Throwable
+  #48 = Utf8               java/lang/Throwable
+  #49 = Methodref          #47.#50        // java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+  #50 = NameAndType        #51:#52        // addSuppressed:(Ljava/lang/Throwable;)V
+  #51 = Utf8               addSuppressed
+  #52 = Utf8               (Ljava/lang/Throwable;)V
+  #53 = Methodref          #25.#45        // java/io/FileInputStream.close:()V
+  #54 = Class              #55            // java/io/FileNotFoundException
+  #55 = Utf8               java/io/FileNotFoundException
+  #56 = Methodref          #54.#57        // java/io/FileNotFoundException.printStackTrace:()V
+  #57 = NameAndType        #58:#6         // printStackTrace:()V
+  #58 = Utf8               printStackTrace
+  #59 = Class              #60            // java/io/IOException
+  #60 = Utf8               java/io/IOException
+  #61 = Methodref          #59.#57        // java/io/IOException.printStackTrace:()V
+  #62 = Class              #63            // e0088_IO_Try_with_resources/ShowFile
+  #63 = Utf8               e0088_IO_Try_with_resources/ShowFile
+  #64 = Utf8               Code
+  #65 = Utf8               LineNumberTable
+  #66 = Utf8               LocalVariableTable
+  #67 = Utf8               this
+  #68 = Utf8               Le0088_IO_Try_with_resources/ShowFile;
+  #69 = Utf8               main
+  #70 = Utf8               ([Ljava/lang/String;)V
+  #71 = Utf8               i
+  #72 = Utf8               I
+  #73 = Utf8               fout
+  #74 = Utf8               Ljava/io/FileOutputStream;
+  #75 = Utf8               fin
+  #76 = Utf8               Ljava/io/FileInputStream;
+  #77 = Utf8               e
+  #78 = Utf8               Ljava/io/FileNotFoundException;
+  #79 = Utf8               Ljava/io/IOException;
+  #80 = Utf8               args
+  #81 = Utf8               [Ljava/lang/String;
+  #82 = Utf8               filenameIn
+  #83 = Utf8               Ljava/lang/String;
+  #84 = Utf8               filenameOut
+  #85 = Utf8               StackMapTable
+  #86 = Class              #87            // java/lang/String
+  #87 = Utf8               java/lang/String
+  #88 = Class              #81            // "[Ljava/lang/String;"
+  #89 = Utf8               Exceptions
+  #90 = Utf8               SourceFile
+  #91 = Utf8               ShowFile.java
+{
+  public e0088_IO_Try_with_resources.ShowFile();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 8: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0088_IO_Try_with_resources/ShowFile;
+
+  public static void main(java.lang.String[]) throws java.io.IOException;
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=8, args_size=1
+         0: ldc           #7                  // String ./__SOURCE__/THIRD.txt
+         2: astore_2
+         3: ldc           #9                  // String ./__SOURCE__/THIRD_COPY.txt
+         5: astore_3
+         6: aload_2
+         7: ifnull        14
+        10: aload_3
+        11: ifnonnull     23
+        14: getstatic     #11                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        17: ldc           #17                 // String USING: CopyFile from where...
+        19: invokevirtual #19                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        22: return
+        23: new           #25                 // class java/io/FileInputStream
+        26: dup
+        27: aload_2
+        28: invokespecial #27                 // Method java/io/FileInputStream."<init>":(Ljava/lang/String;)V
+        31: astore        4
+        33: new           #29                 // class java/io/FileOutputStream
+        36: dup
+        37: aload_3
+        38: invokespecial #31                 // Method java/io/FileOutputStream."<init>":(Ljava/lang/String;)V
+        41: astore        5
+        43: aload         4
+        45: invokevirtual #32                 // Method java/io/FileInputStream.read:()I
+        48: istore_1
+        49: iload_1
+        50: iconst_m1
+        51: if_icmpeq     68
+        54: getstatic     #11                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        57: iload_1
+        58: i2c
+        59: invokevirtual #36                 // Method java/io/PrintStream.print:(C)V
+        62: aload         5
+        64: iload_1
+        65: invokevirtual #40                 // Method java/io/FileOutputStream.write:(I)V
+        68: iload_1
+        69: iconst_m1
+        70: if_icmpne     43
+        73: aload         5
+        75: invokevirtual #44                 // Method java/io/FileOutputStream.close:()V
+        78: goto          103
+        81: astore        6
+        83: aload         5
+        85: invokevirtual #44                 // Method java/io/FileOutputStream.close:()V
+        88: goto          100
+        91: astore        7
+        93: aload         6
+        95: aload         7
+        97: invokevirtual #49                 // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+       100: aload         6
+       102: athrow
+       103: aload         4
+       105: invokevirtual #53                 // Method java/io/FileInputStream.close:()V
+       108: goto          133
+       111: astore        5
+       113: aload         4
+       115: invokevirtual #53                 // Method java/io/FileInputStream.close:()V
+       118: goto          130
+       121: astore        6
+       123: aload         5
+       125: aload         6
+       127: invokevirtual #49                 // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+       130: aload         5
+       132: athrow
+       133: goto          153
+       136: astore        4
+       138: aload         4
+       140: invokevirtual #56                 // Method java/io/FileNotFoundException.printStackTrace:()V
+       143: goto          153
+       146: astore        4
+       148: aload         4
+       150: invokevirtual #61                 // Method java/io/IOException.printStackTrace:()V
+       153: return
+      Exception table:
+         from    to  target type
+            43    73    81   Class java/lang/Throwable
+            83    88    91   Class java/lang/Throwable
+            33   103   111   Class java/lang/Throwable
+           113   118   121   Class java/lang/Throwable
+            23   133   136   Class java/io/FileNotFoundException
+            23   133   146   Class java/io/IOException
+      LineNumberTable:
+        line 12: 0
+        line 13: 3
+        line 15: 6
+        line 16: 14
+        line 17: 22
+        line 20: 23
+        line 21: 33
+        line 24: 43
+        line 25: 49
+        line 26: 54
+        line 27: 62
+        line 29: 68
+        line 31: 73
+        line 20: 81
+        line 31: 103
+        line 20: 111
+        line 35: 133
+        line 31: 136
+        line 32: 138
+        line 35: 143
+        line 33: 146
+        line 34: 148
+        line 36: 153
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           49      32     1     i   I
+           43      60     5  fout   Ljava/io/FileOutputStream;
+          103       8     1     i   I
+           33     100     4   fin   Ljava/io/FileInputStream;
+          133       3     1     i   I
+          138       5     4     e   Ljava/io/FileNotFoundException;
+          148       5     4     e   Ljava/io/IOException;
+            0     154     0  args   [Ljava/lang/String;
+            3     151     2 filenameIn   Ljava/lang/String;
+            6     148     3 filenameOut   Ljava/lang/String;
+      StackMapTable: number_of_entries = 15
+        frame_type = 254 /* append */
+          offset_delta = 14
+          locals = [ top, class java/lang/String, class java/lang/String ]
+        frame_type = 8 /* same */
+        frame_type = 253 /* append */
+          offset_delta = 19
+          locals = [ class java/io/FileInputStream, class java/io/FileOutputStream ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 24
+          locals = [ class "[Ljava/lang/String;", int, class java/lang/String, class java/lang/String, class java/io/FileInputStream, class java/io/FileOutputStream ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 12
+          locals = [ class "[Ljava/lang/String;", top, class java/lang/String, class java/lang/String, class java/io/FileInputStream, class java/io/FileOutputStream ]
+          stack = [ class java/lang/Throwable ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 9
+          locals = [ class "[Ljava/lang/String;", top, class java/lang/String, class java/lang/String, class java/io/FileInputStream, class java/io/FileOutputStream, class java/lang/Throwable ]
+          stack = [ class java/lang/Throwable ]
+        frame_type = 8 /* same */
+        frame_type = 255 /* full_frame */
+          offset_delta = 2
+          locals = [ class "[Ljava/lang/String;", int, class java/lang/String, class java/lang/String, class java/io/FileInputStream ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 7
+          locals = [ class "[Ljava/lang/String;", top, class java/lang/String, class java/lang/String, class java/io/FileInputStream ]
+          stack = [ class java/lang/Throwable ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 9
+          locals = [ class "[Ljava/lang/String;", top, class java/lang/String, class java/lang/String, class java/io/FileInputStream, class java/lang/Throwable ]
+          stack = [ class java/lang/Throwable ]
+        frame_type = 8 /* same */
+        frame_type = 255 /* full_frame */
+          offset_delta = 2
+          locals = [ class "[Ljava/lang/String;", int, class java/lang/String, class java/lang/String ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 2
+          locals = [ class "[Ljava/lang/String;", top, class java/lang/String, class java/lang/String ]
+          stack = [ class java/io/FileNotFoundException ]
+        frame_type = 73 /* same_locals_1_stack_item */
+          stack = [ class java/io/IOException ]
+        frame_type = 6 /* same */
+    Exceptions:
+      throws java.io.IOException
+}
+SourceFile: "ShowFile.java"
+#############################################################################################
+package e0088_IO_Try_with_resources;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class ShowFile {
+    public static void main(String[] args) throws IOException {
+        int i;
+
+        String filenameIn = "./__SOURCE__/THIRD.txt";
+        String filenameOut = "./__SOURCE__/THIRD_COPY.txt";
+
+        if (filenameIn == null || filenameOut == null) {
+            System.out.println("USING: CopyFile from where...");
+            return;
+        }
+
+        try (FileInputStream fin = new FileInputStream(filenameIn);
+             FileOutputStream fout = new FileOutputStream(filenameOut)) {
+
+            do {
+                i = fin.read();
+                if (i != -1) {
+                    System.out.print((char) i);
+                    fout.write(i);
+                }
+            } while (i != -1);
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+---------------------------------------------------------------------------------------------

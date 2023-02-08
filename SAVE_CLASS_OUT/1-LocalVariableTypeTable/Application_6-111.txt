@@ -1,0 +1,353 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_002/out/production/BookShildt_002/e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Application_6.class
+  Last modified 19 џэт. 2023 у.; size 2962 bytes
+  SHA-256 checksum d7a0f24ac7008143c2701abce8272b4defb7f6c3f4da45f74dff856f3e91bdbb
+  Compiled from "Application_6.java"
+public class e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1.Application_6
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #70                         // e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Application_6
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3
+Constant pool:
+    #1 = Methodref          #2.#3         // java/lang/Object."<init>":()V
+    #2 = Class              #4            // java/lang/Object
+    #3 = NameAndType        #5:#6         // "<init>":()V
+    #4 = Utf8               java/lang/Object
+    #5 = Utf8               <init>
+    #6 = Utf8               ()V
+    #7 = Class              #8            // e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Monitor
+    #8 = Utf8               e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Monitor
+    #9 = Methodref          #7.#3         // e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Monitor."<init>":()V
+   #10 = Fieldref           #11.#12       // java/lang/System.out:Ljava/io/PrintStream;
+   #11 = Class              #13           // java/lang/System
+   #12 = NameAndType        #14:#15       // out:Ljava/io/PrintStream;
+   #13 = Utf8               java/lang/System
+   #14 = Utf8               out
+   #15 = Utf8               Ljava/io/PrintStream;
+   #16 = Methodref          #17.#18       // java/io/PrintStream.println:()V
+   #17 = Class              #19           // java/io/PrintStream
+   #18 = NameAndType        #20:#6        // println:()V
+   #19 = Utf8               java/io/PrintStream
+   #20 = Utf8               println
+   #21 = Class              #22           // e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Array2
+   #22 = Utf8               e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Array2
+   #23 = Methodref          #21.#3        // e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Array2."<init>":()V
+   #24 = Class              #25           // java/util/ArrayList
+   #25 = Utf8               java/util/ArrayList
+   #26 = Methodref          #24.#3        // java/util/ArrayList."<init>":()V
+   #27 = Class              #28           // e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Writer2
+   #28 = Utf8               e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Writer2
+   #29 = InvokeDynamic      #0:#30        // #0:makeConcatWithConstants:(I)Ljava/lang/String;
+   #30 = NameAndType        #31:#32       // makeConcatWithConstants:(I)Ljava/lang/String;
+   #31 = Utf8               makeConcatWithConstants
+   #32 = Utf8               (I)Ljava/lang/String;
+   #33 = Methodref          #27.#34       // e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Writer2."<init>":(Ljava/lang/String;Le0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Array2;Le0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Monitor;)V
+   #34 = NameAndType        #5:#35        // "<init>":(Ljava/lang/String;Le0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Array2;Le0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Monitor;)V
+   #35 = Utf8               (Ljava/lang/String;Le0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Array2;Le0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Monitor;)V
+   #36 = InterfaceMethodref #37.#38       // java/util/List.add:(Ljava/lang/Object;)Z
+   #37 = Class              #39           // java/util/List
+   #38 = NameAndType        #40:#41       // add:(Ljava/lang/Object;)Z
+   #39 = Utf8               java/util/List
+   #40 = Utf8               add
+   #41 = Utf8               (Ljava/lang/Object;)Z
+   #42 = InterfaceMethodref #37.#43       // java/util/List.get:(I)Ljava/lang/Object;
+   #43 = NameAndType        #44:#45       // get:(I)Ljava/lang/Object;
+   #44 = Utf8               get
+   #45 = Utf8               (I)Ljava/lang/Object;
+   #46 = Class              #47           // java/lang/Thread
+   #47 = Utf8               java/lang/Thread
+   #48 = Methodref          #46.#49       // java/lang/Thread.start:()V
+   #49 = NameAndType        #50:#6        // start:()V
+   #50 = Utf8               start
+   #51 = Class              #52           // e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Printer2
+   #52 = Utf8               e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Printer2
+   #53 = String             #54           // <Printer>
+   #54 = Utf8               <Printer>
+   #55 = Methodref          #51.#34       // e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Printer2."<init>":(Ljava/lang/String;Le0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Array2;Le0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Monitor;)V
+   #56 = Methodref          #51.#49       // e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Printer2.start:()V
+   #57 = String             #58           // -------------------------------
+   #58 = Utf8               -------------------------------
+   #59 = Methodref          #17.#60       // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #60 = NameAndType        #20:#61       // println:(Ljava/lang/String;)V
+   #61 = Utf8               (Ljava/lang/String;)V
+   #62 = Class              #63           // e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/StateLooker2
+   #63 = Utf8               e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/StateLooker2
+   #64 = String             #65           // <STATELOOKER>
+   #65 = Utf8               <STATELOOKER>
+   #66 = Methodref          #62.#67       // e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/StateLooker2."<init>":(Ljava/lang/String;Ljava/util/List;Le0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Monitor;)V
+   #67 = NameAndType        #5:#68        // "<init>":(Ljava/lang/String;Ljava/util/List;Le0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Monitor;)V
+   #68 = Utf8               (Ljava/lang/String;Ljava/util/List;Le0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Monitor;)V
+   #69 = Methodref          #62.#49       // e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/StateLooker2.start:()V
+   #70 = Class              #71           // e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Application_6
+   #71 = Utf8               e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Application_6
+   #72 = Utf8               Code
+   #73 = Utf8               LineNumberTable
+   #74 = Utf8               LocalVariableTable
+   #75 = Utf8               this
+   #76 = Utf8               Le0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Application_6;
+   #77 = Utf8               main
+   #78 = Utf8               ([Ljava/lang/String;)V
+   #79 = Utf8               i
+   #80 = Utf8               I
+   #81 = Utf8               args
+   #82 = Utf8               [Ljava/lang/String;
+   #83 = Utf8               monitor
+   #84 = Utf8               Le0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Monitor;
+   #85 = Utf8               arr
+   #86 = Utf8               Le0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Array2;
+   #87 = Utf8               writers
+   #88 = Utf8               Ljava/util/List;
+   #89 = Utf8               subscribers
+   #90 = Utf8               printer
+   #91 = Utf8               Le0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Printer2;
+   #92 = Utf8               index
+   #93 = Utf8               [I
+   #94 = Utf8               stateLooker
+   #95 = Utf8               Le0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/StateLooker2;
+   #96 = Utf8               LocalVariableTypeTable
+   #97 = Utf8               Ljava/util/List<Ljava/lang/Thread;>;
+   #98 = Utf8               StackMapTable
+   #99 = Class              #82           // "[Ljava/lang/String;"
+  #100 = Class              #93           // "[I"
+  #101 = Utf8               SourceFile
+  #102 = Utf8               Application_6.java
+  #103 = Utf8               BootstrapMethods
+  #104 = MethodHandle       6:#105        // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #105 = Methodref          #106.#107     // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #106 = Class              #108          // java/lang/invoke/StringConcatFactory
+  #107 = NameAndType        #31:#109      // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #108 = Utf8               java/lang/invoke/StringConcatFactory
+  #109 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #110 = String             #111          // <Writer_\u0001>
+  #111 = Utf8               <Writer_\u0001>
+  #112 = Utf8               InnerClasses
+  #113 = Class              #114          // java/lang/invoke/MethodHandles$Lookup
+  #114 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #115 = Class              #116          // java/lang/invoke/MethodHandles
+  #116 = Utf8               java/lang/invoke/MethodHandles
+  #117 = Utf8               Lookup
+{
+  public e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1.Application_6();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 5: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Application_6;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=6, locals=11, args_size=1
+         0: new           #7                  // class e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Monitor
+         3: dup
+         4: invokespecial #9                  // Method e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Monitor."<init>":()V
+         7: astore_1
+         8: getstatic     #10                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        11: invokevirtual #16                 // Method java/io/PrintStream.println:()V
+        14: new           #21                 // class e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Array2
+        17: dup
+        18: invokespecial #23                 // Method e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Array2."<init>":()V
+        21: astore_2
+        22: new           #24                 // class java/util/ArrayList
+        25: dup
+        26: invokespecial #26                 // Method java/util/ArrayList."<init>":()V
+        29: astore_3
+        30: new           #24                 // class java/util/ArrayList
+        33: dup
+        34: invokespecial #26                 // Method java/util/ArrayList."<init>":()V
+        37: astore        4
+        39: iconst_0
+        40: istore        5
+        42: iload         5
+        44: bipush        10
+        46: if_icmpge     92
+        49: aload_3
+        50: new           #27                 // class e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Writer2
+        53: dup
+        54: iload         5
+        56: invokedynamic #29,  0             // InvokeDynamic #0:makeConcatWithConstants:(I)Ljava/lang/String;
+        61: aload_2
+        62: aload_1
+        63: invokespecial #33                 // Method e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Writer2."<init>":(Ljava/lang/String;Le0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Array2;Le0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Monitor;)V
+        66: invokeinterface #36,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+        71: pop
+        72: aload_3
+        73: iload         5
+        75: invokeinterface #42,  2           // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+        80: checkcast     #46                 // class java/lang/Thread
+        83: invokevirtual #48                 // Method java/lang/Thread.start:()V
+        86: iinc          5, 1
+        89: goto          42
+        92: new           #51                 // class e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Printer2
+        95: dup
+        96: ldc           #53                 // String <Printer>
+        98: aload_2
+        99: aload_1
+       100: invokespecial #55                 // Method e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Printer2."<init>":(Ljava/lang/String;Le0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Array2;Le0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Monitor;)V
+       103: astore        5
+       105: aload         5
+       107: invokevirtual #56                 // Method e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Printer2.start:()V
+       110: iconst_4
+       111: newarray       int
+       113: dup
+       114: iconst_0
+       115: iconst_3
+       116: iastore
+       117: dup
+       118: iconst_1
+       119: iconst_5
+       120: iastore
+       121: dup
+       122: iconst_2
+       123: bipush        7
+       125: iastore
+       126: dup
+       127: iconst_3
+       128: bipush        8
+       130: iastore
+       131: astore        6
+       133: aload         6
+       135: astore        7
+       137: aload         7
+       139: arraylength
+       140: istore        8
+       142: iconst_0
+       143: istore        9
+       145: iload         9
+       147: iload         8
+       149: if_icmpge     184
+       152: aload         7
+       154: iload         9
+       156: iaload
+       157: istore        10
+       159: aload         4
+       161: aload_3
+       162: iload         10
+       164: invokeinterface #42,  2           // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+       169: checkcast     #46                 // class java/lang/Thread
+       172: invokeinterface #36,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+       177: pop
+       178: iinc          9, 1
+       181: goto          145
+       184: aload         4
+       186: aload         5
+       188: invokeinterface #36,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+       193: pop
+       194: getstatic     #10                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       197: ldc           #57                 // String -------------------------------
+       199: invokevirtual #59                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       202: new           #62                 // class e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/StateLooker2
+       205: dup
+       206: ldc           #64                 // String <STATELOOKER>
+       208: aload         4
+       210: aload_1
+       211: invokespecial #66                 // Method e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/StateLooker2."<init>":(Ljava/lang/String;Ljava/util/List;Le0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Monitor;)V
+       214: astore        7
+       216: aload         7
+       218: invokevirtual #69                 // Method e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/StateLooker2.start:()V
+       221: return
+      LineNumberTable:
+        line 8: 0
+        line 10: 8
+        line 11: 14
+        line 13: 22
+        line 14: 30
+        line 16: 39
+        line 17: 49
+        line 18: 72
+        line 16: 86
+        line 20: 92
+        line 21: 105
+        line 24: 110
+        line 26: 133
+        line 27: 159
+        line 26: 178
+        line 29: 184
+        line 30: 194
+        line 32: 202
+        line 33: 216
+        line 35: 221
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           42      50     5     i   I
+          159      19    10     i   I
+            0     222     0  args   [Ljava/lang/String;
+            8     214     1 monitor   Le0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Monitor;
+           22     200     2   arr   Le0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Array2;
+           30     192     3 writers   Ljava/util/List;
+           39     183     4 subscribers   Ljava/util/List;
+          105     117     5 printer   Le0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Printer2;
+          133      89     6 index   [I
+          216       6     7 stateLooker   Le0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/StateLooker2;
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+           30     192     3 writers   Ljava/util/List<Ljava/lang/Thread;>;
+           39     183     4 subscribers   Ljava/util/List<Ljava/lang/Thread;>;
+      StackMapTable: number_of_entries = 4
+        frame_type = 255 /* full_frame */
+          offset_delta = 42
+          locals = [ class "[Ljava/lang/String;", class e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Monitor, class e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Array2, class java/util/List, class java/util/List, int ]
+          stack = []
+        frame_type = 250 /* chop */
+          offset_delta = 49
+        frame_type = 255 /* full_frame */
+          offset_delta = 52
+          locals = [ class "[Ljava/lang/String;", class e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Monitor, class e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Array2, class java/util/List, class java/util/List, class e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1/Printer2, class "[I", class "[I", int, int ]
+          stack = []
+        frame_type = 248 /* chop */
+          offset_delta = 38
+}
+SourceFile: "Application_6.java"
+BootstrapMethods:
+  0: #104 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #110 <Writer_\u0001>
+InnerClasses:
+  public static final #117= #113 of #115; // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+#############################################################################################
+package e0069_Threads_print_list_TRANSFER_THREADS_LIST_TO_THREAD_1;
+
+import java.util.ArrayList;
+
+public class Application_6 {
+
+    public static void main(String[] args) {
+        Monitor monitor = new Monitor();
+
+        System.out.println();
+        Array2 arr = new Array2();
+
+        java.util.List<Thread> writers = new ArrayList<>();
+        java.util.List<Thread> subscribers = new ArrayList<>();
+
+        for (int i = 0; i < 10; i++) {
+            writers.add(new Writer2("<Writer_" + i + ">", arr, monitor));
+            writers.get(i).start();
+        }
+        Printer2 printer = new Printer2("<Printer>", arr, monitor);
+        printer.start();
+
+
+        int[] index = {3, 5, 7, 8};
+
+        for (int i : index) {
+            subscribers.add(writers.get(i));
+        }
+        subscribers.add(printer);
+        System.out.println("-------------------------------");
+
+        StateLooker2 stateLooker = new StateLooker2("<STATELOOKER>", subscribers, monitor);
+        stateLooker.start();
+
+    }
+}
+---------------------------------------------------------------------------------------------

@@ -1,0 +1,387 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_002/out/production/BookShildt_002/e0087_IO_3_copy/CopyFile.class
+  Last modified 6 февр. 2023 г.; size 1798 bytes
+  SHA-256 checksum 7d2900f50fffc9beffa10310bc19f4c59c698b4c11a5b7db36944f3dab8d731b
+  Compiled from "CopyFile.java"
+public class e0087_IO_3_copy.CopyFile
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #49                         // e0087_IO_3_copy/CopyFile
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = String             #8             // ./__SOURCE__/FIRST.txt
+   #8 = Utf8               ./__SOURCE__/FIRST.txt
+   #9 = String             #10            // ./__SOURCE__/SECOND.txt
+  #10 = Utf8               ./__SOURCE__/SECOND.txt
+  #11 = Fieldref           #12.#13        // java/lang/System.out:Ljava/io/PrintStream;
+  #12 = Class              #14            // java/lang/System
+  #13 = NameAndType        #15:#16        // out:Ljava/io/PrintStream;
+  #14 = Utf8               java/lang/System
+  #15 = Utf8               out
+  #16 = Utf8               Ljava/io/PrintStream;
+  #17 = String             #18            // USING: CopyFile from where...
+  #18 = Utf8               USING: CopyFile from where...
+  #19 = Methodref          #20.#21        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #20 = Class              #22            // java/io/PrintStream
+  #21 = NameAndType        #23:#24        // println:(Ljava/lang/String;)V
+  #22 = Utf8               java/io/PrintStream
+  #23 = Utf8               println
+  #24 = Utf8               (Ljava/lang/String;)V
+  #25 = Class              #26            // java/io/FileInputStream
+  #26 = Utf8               java/io/FileInputStream
+  #27 = Methodref          #25.#28        // java/io/FileInputStream."<init>":(Ljava/lang/String;)V
+  #28 = NameAndType        #5:#24         // "<init>":(Ljava/lang/String;)V
+  #29 = Class              #30            // java/io/FileOutputStream
+  #30 = Utf8               java/io/FileOutputStream
+  #31 = Methodref          #29.#28        // java/io/FileOutputStream."<init>":(Ljava/lang/String;)V
+  #32 = Methodref          #25.#33        // java/io/FileInputStream.read:()I
+  #33 = NameAndType        #34:#35        // read:()I
+  #34 = Utf8               read
+  #35 = Utf8               ()I
+  #36 = Methodref          #29.#37        // java/io/FileOutputStream.write:(I)V
+  #37 = NameAndType        #38:#39        // write:(I)V
+  #38 = Utf8               write
+  #39 = Utf8               (I)V
+  #40 = Methodref          #25.#41        // java/io/FileInputStream.close:()V
+  #41 = NameAndType        #42:#6         // close:()V
+  #42 = Utf8               close
+  #43 = Class              #44            // java/io/IOException
+  #44 = Utf8               java/io/IOException
+  #45 = Methodref          #43.#46        // java/io/IOException.printStackTrace:()V
+  #46 = NameAndType        #47:#6         // printStackTrace:()V
+  #47 = Utf8               printStackTrace
+  #48 = Methodref          #29.#41        // java/io/FileOutputStream.close:()V
+  #49 = Class              #50            // e0087_IO_3_copy/CopyFile
+  #50 = Utf8               e0087_IO_3_copy/CopyFile
+  #51 = Utf8               Code
+  #52 = Utf8               LineNumberTable
+  #53 = Utf8               LocalVariableTable
+  #54 = Utf8               this
+  #55 = Utf8               Le0087_IO_3_copy/CopyFile;
+  #56 = Utf8               main
+  #57 = Utf8               ([Ljava/lang/String;)V
+  #58 = Utf8               eIn
+  #59 = Utf8               Ljava/io/IOException;
+  #60 = Utf8               eOut
+  #61 = Utf8               i
+  #62 = Utf8               I
+  #63 = Utf8               e
+  #64 = Utf8               args
+  #65 = Utf8               [Ljava/lang/String;
+  #66 = Utf8               fin
+  #67 = Utf8               Ljava/io/FileInputStream;
+  #68 = Utf8               fout
+  #69 = Utf8               Ljava/io/FileOutputStream;
+  #70 = Utf8               filenameIN
+  #71 = Utf8               Ljava/lang/String;
+  #72 = Utf8               filenameOUT
+  #73 = Utf8               StackMapTable
+  #74 = Class              #65            // "[Ljava/lang/String;"
+  #75 = Class              #76            // java/lang/String
+  #76 = Utf8               java/lang/String
+  #77 = Class              #78            // java/lang/Throwable
+  #78 = Utf8               java/lang/Throwable
+  #79 = Utf8               Exceptions
+  #80 = Utf8               SourceFile
+  #81 = Utf8               CopyFile.java
+{
+  public e0087_IO_3_copy.CopyFile();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 7: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0087_IO_3_copy/CopyFile;
+
+  public static void main(java.lang.String[]) throws java.io.IOException;
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=9, args_size=1
+         0: aconst_null
+         1: astore_2
+         2: aconst_null
+         3: astore_3
+         4: ldc           #7                  // String ./__SOURCE__/FIRST.txt
+         6: astore        4
+         8: ldc           #9                  // String ./__SOURCE__/SECOND.txt
+        10: astore        5
+        12: aload         4
+        14: ifnull        22
+        17: aload         5
+        19: ifnonnull     31
+        22: getstatic     #11                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        25: ldc           #17                 // String USING: CopyFile from where...
+        27: invokevirtual #19                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        30: return
+        31: new           #25                 // class java/io/FileInputStream
+        34: dup
+        35: aload         4
+        37: invokespecial #27                 // Method java/io/FileInputStream."<init>":(Ljava/lang/String;)V
+        40: astore_2
+        41: new           #29                 // class java/io/FileOutputStream
+        44: dup
+        45: aload         5
+        47: invokespecial #31                 // Method java/io/FileOutputStream."<init>":(Ljava/lang/String;)V
+        50: astore_3
+        51: aload_2
+        52: invokevirtual #32                 // Method java/io/FileInputStream.read:()I
+        55: istore_1
+        56: iload_1
+        57: iconst_m1
+        58: if_icmpeq     66
+        61: aload_3
+        62: iload_1
+        63: invokevirtual #36                 // Method java/io/FileOutputStream.write:(I)V
+        66: iload_1
+        67: iconst_m1
+        68: if_icmpne     51
+        71: aload_2
+        72: ifnull        79
+        75: aload_2
+        76: invokevirtual #40                 // Method java/io/FileInputStream.close:()V
+        79: goto          89
+        82: astore        6
+        84: aload         6
+        86: invokevirtual #45                 // Method java/io/IOException.printStackTrace:()V
+        89: aload_3
+        90: ifnull        97
+        93: aload_3
+        94: invokevirtual #48                 // Method java/io/FileOutputStream.close:()V
+        97: goto          197
+       100: astore        6
+       102: aload         6
+       104: invokevirtual #45                 // Method java/io/IOException.printStackTrace:()V
+       107: goto          197
+       110: astore        6
+       112: aload         6
+       114: invokevirtual #45                 // Method java/io/IOException.printStackTrace:()V
+       117: aload_2
+       118: ifnull        125
+       121: aload_2
+       122: invokevirtual #40                 // Method java/io/FileInputStream.close:()V
+       125: goto          135
+       128: astore        6
+       130: aload         6
+       132: invokevirtual #45                 // Method java/io/IOException.printStackTrace:()V
+       135: aload_3
+       136: ifnull        143
+       139: aload_3
+       140: invokevirtual #48                 // Method java/io/FileOutputStream.close:()V
+       143: goto          197
+       146: astore        6
+       148: aload         6
+       150: invokevirtual #45                 // Method java/io/IOException.printStackTrace:()V
+       153: goto          197
+       156: astore        7
+       158: aload_2
+       159: ifnull        166
+       162: aload_2
+       163: invokevirtual #40                 // Method java/io/FileInputStream.close:()V
+       166: goto          176
+       169: astore        8
+       171: aload         8
+       173: invokevirtual #45                 // Method java/io/IOException.printStackTrace:()V
+       176: aload_3
+       177: ifnull        184
+       180: aload_3
+       181: invokevirtual #48                 // Method java/io/FileOutputStream.close:()V
+       184: goto          194
+       187: astore        8
+       189: aload         8
+       191: invokevirtual #45                 // Method java/io/IOException.printStackTrace:()V
+       194: aload         7
+       196: athrow
+       197: return
+      Exception table:
+         from    to  target type
+            71    79    82   Class java/io/IOException
+            89    97   100   Class java/io/IOException
+            31    71   110   Class java/io/IOException
+           117   125   128   Class java/io/IOException
+           135   143   146   Class java/io/IOException
+            31    71   156   any
+           110   117   156   any
+           158   166   169   Class java/io/IOException
+           176   184   187   Class java/io/IOException
+           156   158   156   any
+      LineNumberTable:
+        line 10: 0
+        line 11: 2
+        line 12: 4
+        line 13: 8
+        line 15: 12
+        line 16: 22
+        line 17: 30
+        line 21: 31
+        line 22: 41
+        line 25: 51
+        line 26: 56
+        line 27: 61
+        line 29: 66
+        line 34: 71
+        line 35: 75
+        line 39: 79
+        line 37: 82
+        line 38: 84
+        line 42: 89
+        line 43: 93
+        line 47: 97
+        line 45: 100
+        line 46: 102
+        line 48: 107
+        line 30: 110
+        line 31: 112
+        line 34: 117
+        line 35: 121
+        line 39: 125
+        line 37: 128
+        line 38: 130
+        line 42: 135
+        line 43: 139
+        line 47: 143
+        line 45: 146
+        line 46: 148
+        line 48: 153
+        line 33: 156
+        line 34: 158
+        line 35: 162
+        line 39: 166
+        line 37: 169
+        line 38: 171
+        line 42: 176
+        line 43: 180
+        line 47: 184
+        line 45: 187
+        line 46: 189
+        line 48: 194
+        line 51: 197
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           84       5     6   eIn   Ljava/io/IOException;
+          102       5     6  eOut   Ljava/io/IOException;
+           56      54     1     i   I
+          112       5     6     e   Ljava/io/IOException;
+          130       5     6   eIn   Ljava/io/IOException;
+          148       5     6  eOut   Ljava/io/IOException;
+          171       5     8   eIn   Ljava/io/IOException;
+          189       5     8  eOut   Ljava/io/IOException;
+            0     198     0  args   [Ljava/lang/String;
+            2     196     2   fin   Ljava/io/FileInputStream;
+            4     194     3  fout   Ljava/io/FileOutputStream;
+            8     190     4 filenameIN   Ljava/lang/String;
+           12     186     5 filenameOUT   Ljava/lang/String;
+      StackMapTable: number_of_entries = 23
+        frame_type = 255 /* full_frame */
+          offset_delta = 22
+          locals = [ class "[Ljava/lang/String;", top, class java/io/FileInputStream, class java/io/FileOutputStream, class java/lang/String, class java/lang/String ]
+          stack = []
+        frame_type = 8 /* same */
+        frame_type = 19 /* same */
+        frame_type = 255 /* full_frame */
+          offset_delta = 14
+          locals = [ class "[Ljava/lang/String;", int, class java/io/FileInputStream, class java/io/FileOutputStream, class java/lang/String, class java/lang/String ]
+          stack = []
+        frame_type = 12 /* same */
+        frame_type = 66 /* same_locals_1_stack_item */
+          stack = [ class java/io/IOException ]
+        frame_type = 6 /* same */
+        frame_type = 7 /* same */
+        frame_type = 66 /* same_locals_1_stack_item */
+          stack = [ class java/io/IOException ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 9
+          locals = [ class "[Ljava/lang/String;", top, class java/io/FileInputStream, class java/io/FileOutputStream, class java/lang/String, class java/lang/String ]
+          stack = [ class java/io/IOException ]
+        frame_type = 14 /* same */
+        frame_type = 66 /* same_locals_1_stack_item */
+          stack = [ class java/io/IOException ]
+        frame_type = 6 /* same */
+        frame_type = 7 /* same */
+        frame_type = 66 /* same_locals_1_stack_item */
+          stack = [ class java/io/IOException ]
+        frame_type = 73 /* same_locals_1_stack_item */
+          stack = [ class java/lang/Throwable ]
+        frame_type = 253 /* append */
+          offset_delta = 9
+          locals = [ top, class java/lang/Throwable ]
+        frame_type = 66 /* same_locals_1_stack_item */
+          stack = [ class java/io/IOException ]
+        frame_type = 6 /* same */
+        frame_type = 7 /* same */
+        frame_type = 66 /* same_locals_1_stack_item */
+          stack = [ class java/io/IOException ]
+        frame_type = 6 /* same */
+        frame_type = 249 /* chop */
+          offset_delta = 2
+    Exceptions:
+      throws java.io.IOException
+}
+SourceFile: "CopyFile.java"
+#############################################################################################
+package e0087_IO_3_copy;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class CopyFile {
+    public static void main(String[] args) throws IOException {
+        int i;
+        FileInputStream fin = null;
+        FileOutputStream fout = null;
+        String filenameIN = "./__SOURCE__/FIRST.txt";
+        String filenameOUT = "./__SOURCE__/SECOND.txt";
+
+        if (filenameIN == null || filenameOUT == null) {
+            System.out.println("USING: CopyFile from where...");
+            return;
+        }
+
+        try {
+            fin = new FileInputStream(filenameIN);
+            fout = new FileOutputStream(filenameOUT);
+
+            do {
+                i = fin.read();
+                if (i != -1) {
+                    fout.write(i);
+                }
+            } while (i != -1);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (fin != null) {
+                    fin.close();
+                }
+            } catch (IOException eIn) {
+                eIn.printStackTrace();
+            }
+
+            try {
+                if (fout != null) {
+                    fout.close();
+                }
+            } catch (IOException eOut) {
+                eOut.printStackTrace();
+            }
+        }
+
+
+    }
+}
+---------------------------------------------------------------------------------------------
